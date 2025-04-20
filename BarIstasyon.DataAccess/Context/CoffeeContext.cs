@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using Microsoft.EntityFrameworkCore;
 using BarIstasyon.Entity.Entities;
 using MongoDB.EntityFrameworkCore.Extensions;
@@ -59,7 +59,7 @@ namespace BarIstasyon.DataAccess.Context
             modelBuilder.Entity<Location>().ToCollection("Locations");
             modelBuilder.Entity<Pricing>().ToCollection("Pricings");
             modelBuilder.Entity<Service>().ToCollection("Services");
-            modelBuilder.Entity<SocialMedia>().ToCollection("SocialMedias");
+            modelBuilder.Entity<SocialMedia>().ToCollection("SocialMedias   ");
 
 
 

@@ -11,3 +11,6 @@
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/obj/Debug/net8.0/refint/BarIstasyon.DataAccess.dll
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/obj/Debug/net8.0/BarIstasyon.DataAccess.pdb
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/obj/Debug/net8.0/ref/BarIstasyon.DataAccess.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/bin/Debug/net8.0/BarIstasyon.Entity.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/bin/Debug/net8.0/BarIstasyon.Entity.pdb
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/obj/Debug/net8.0/BarIstas.BC5C9B3F.Up2Date
