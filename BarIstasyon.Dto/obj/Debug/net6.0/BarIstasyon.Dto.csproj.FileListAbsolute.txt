@@ -1,0 +1,12 @@
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/bin/Debug/net6.0/BarIstasyon.Dto.deps.json
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/bin/Debug/net6.0/BarIstasyon.Dto.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/bin/Debug/net6.0/BarIstasyon.Dto.pdb
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/BarIstasyon.Dto.GeneratedMSBuildEditorConfig.editorconfig
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/BarIstasyon.Dto.AssemblyInfoInputs.cache
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/BarIstasyon.Dto.AssemblyInfo.cs
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/BarIstasyon.Dto.csproj.CoreCompileInputs.cache
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/BarIstasyon.Dto.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/refint/BarIstasyon.Dto.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/BarIstasyon.Dto.pdb
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/ref/BarIstasyon.Dto.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/obj/Debug/net6.0/BarIstasyon.Dto.sourcelink.json

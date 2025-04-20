@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{4F85CE0A-E7D2-479F-8B11-F22047DB21FF}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebUI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.DataAccess/Context/CoffeeContext.cs">
+    <Files>
+      <File FileName="BarIstasyon.Entity/Entities/SocialMedia.cs" />
+      <File FileName="BarIstasyon.DataAccess/Context/CoffeeContext.cs" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BarIstasyon">
+            <Node name="BarIstasyon.DataAccess" expanded="True">
+              <Node name="Dependencies" selected="True" />
+              <Node name="Context" expanded="True" />
+            </Node>
+            <Node name="BarIstasyon.Entity" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
