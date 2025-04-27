@@ -14,5 +14,8 @@
     <ProjectReference Include="..\BarIstasyon.DataAccess\BarIstasyon.DataAccess.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\BarIstasyon.Business\BarIstasyon.Business.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

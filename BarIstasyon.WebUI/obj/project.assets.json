@@ -407,6 +407,23 @@
           "lib/net7.0/ZstdSharp.dll": {}
         }
       },
+      "BarIstasyon.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BarIstasyon.DataAccess": "1.0.0",
+          "BarIstasyon.Entity": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.15",
+          "MongoDB.Bson": "3.3.0",
+          "MongoDB.EntityFrameworkCore": "8.3.0"
+        },
+        "compile": {
+          "bin/placeholder/BarIstasyon.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BarIstasyon.Business.dll": {}
+        }
+      },
       "BarIstasyon.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1170,6 +1187,11 @@
         "zstdsharp.port.nuspec"
       ]
     },
+    "BarIstasyon.Business/1.0.0": {
+      "type": "project",
+      "path": "../BarIstasyon.Business/BarIstasyon.Business.csproj",
+      "msbuildProject": "../BarIstasyon.Business/BarIstasyon.Business.csproj"
+    },
     "BarIstasyon.DataAccess/1.0.0": {
       "type": "project",
       "path": "../BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj",
@@ -1183,6 +1205,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BarIstasyon.Business >= 1.0.0",
       "BarIstasyon.DataAccess >= 1.0.0",
       "MongoDB.Driver >= 3.3.0"
     ]
@@ -1213,6 +1236,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj": {
+              "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj"
+            },
             "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj": {
               "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj"
             }
@@ -1223,11 +1249,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {

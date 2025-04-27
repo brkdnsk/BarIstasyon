@@ -2,19 +2,16 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.Business/Concrete/BannerManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebUI/Program.cs">
     <Files>
       <File FileName="BarIstasyon.Business/Concrete/BannerManager.cs" Line="18" Column="1" />
+      <File FileName="BarIstasyon.WebUI/Program.cs" Line="34" Column="55" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BarIstasyon">
-            <Node name="BarIstasyon.Business">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" selected="True" />
-            </Node>
+            <Node name="BarIstasyon.WebUI" expanded="True" />
           </Node>
         </State>
       </Pad>
