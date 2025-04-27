@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using MongoDB.Driver; // MongoDB için gerekli using
 using BarIstasyon.DataAccess.Context;
 using Microsoft.EntityFrameworkCore;
+using BarIstasyon.DataAccess.Abstract;
+using BarIstasyon.DataAccess.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +31,8 @@ builder.Services.AddSingleton<IMongoClient>(mongoClient);
 builder.Services.AddSingleton<IMongoDatabase>(mongoDatabase);
 
 // Add services to the container.
+builder.Services.AddScoped<IBannerDal, EfBannerDal>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

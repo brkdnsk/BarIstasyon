@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RXNaaVL8fII=",
+  "dgSpecHash": "Zg/qCWUOFlQLvu1nu8PGLK4IuSBjxlfMbthZu8jppEUgoc+mIKAOdx7IRWLJJbnhfv3H/MAUtCOrHWVWx7cxlg==",
   "success": true,
   "projectFilePath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj",
   "expectedPackageFiles": [
-    "/Users/burakdansik/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/burakdansik/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "/Users/burakdansik/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/burakdansik/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }
