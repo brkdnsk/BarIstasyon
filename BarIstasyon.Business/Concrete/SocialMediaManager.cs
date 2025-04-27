@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Linq.Expressions;
 using BarIstasyon.Business.Abstract;
 using BarIstasyon.DataAccess.Abstract;
 using BarIstasyon.Entity.Entities;
-using MongoDB.Bson;
 
 namespace BarIstasyon.Business.Concrete
 {
-    public class BannerManager : GenericManager<Banner>, IBannerService
+    public class SocialMediaManager : GenericManager<SocialMedia>, ISocialMediaService
     {
-        public BannerManager(IGenericDal<Banner> genericDal) : base(genericDal)
+        public SocialMediaManager(IGenericDal<SocialMedia> genericDal) : base(genericDal)
         {
         }
     }

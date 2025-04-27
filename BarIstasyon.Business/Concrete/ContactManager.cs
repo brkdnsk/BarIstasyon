@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Linq.Expressions;
 using BarIstasyon.Business.Abstract;
 using BarIstasyon.DataAccess.Abstract;
 using BarIstasyon.Entity.Entities;
-using MongoDB.Bson;
 
 namespace BarIstasyon.Business.Concrete
 {
-    public class BannerManager : GenericManager<Banner>, IBannerService
+    public class ContactManager : GenericManager<Contact>, IContactService
     {
-        public BannerManager(IGenericDal<Banner> genericDal) : base(genericDal)
+        public ContactManager(IGenericDal<Contact> genericDal) : base(genericDal)
         {
         }
     }

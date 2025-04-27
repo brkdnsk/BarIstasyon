@@ -2,19 +2,18 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.Business/Concrete/BannerManager.cs">
+    <Files>
+      <File FileName="BarIstasyon.Business/Concrete/BannerManager.cs" Line="18" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BarIstasyon">
-            <Node name="BarIstasyon.DataAccess">
-              <Node name="EntityFramework" expanded="True">
-                <Node name="EfSocailMediaDal.cs" selected="True" />
-              </Node>
-              <Node name="Repositories" expanded="True" />
-            </Node>
-            <Node name="BarIstasyon.Entity">
-              <Node name="Entities" expanded="True" />
+            <Node name="BarIstasyon.Business">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Abstract" expanded="True" />
+              <Node name="Concrete" selected="True" />
             </Node>
           </Node>
         </State>
