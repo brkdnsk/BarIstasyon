@@ -6,7 +6,7 @@ using BarIstasyon.Entity.Entities;
 
 namespace BarIstasyon.DataAccess.EntityFramework
 {
-	public class EfContactDal :GenericRepository<Base>,IBaseDal
+	public class EfContactDal :GenericRepository<Contact>,IContactDal
 	{
         public EfContactDal(CoffeeContext context) : base(context)
         {

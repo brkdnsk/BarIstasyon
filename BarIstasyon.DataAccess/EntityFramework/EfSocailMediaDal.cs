@@ -6,7 +6,7 @@ using BarIstasyon.Entity.Entities;
 
 namespace BarIstasyon.DataAccess.EntityFramework
 {
-	public class EfSocailMediaDal : GenericRepository<Base>, IBaseDal
+	public class EfSocailMediaDal : GenericRepository<SocialMedia>, ISocialMediaDal
 	{
         public EfSocailMediaDal(CoffeeContext context) : base(context)
         {

@@ -6,7 +6,7 @@ using BarIstasyon.Entity.Entities;
 
 namespace BarIstasyon.DataAccess.EntityFramework
 {
-	public class EfServiceDal : GenericRepository<Base>, IBaseDal
+	public class EfServiceDal : GenericRepository<Service>, IServiceDal
 	{
         public EfServiceDal(CoffeeContext context) : base(context)
         {

@@ -6,7 +6,7 @@ using BarIstasyon.DataAccess.Repositories;
 
 namespace BarIstasyon.DataAccess.EntityFramework
 {
-	public class EfLocationDal: GenericRepository<Base>, IBaseDal
+	public class EfLocationDal: GenericRepository<Location>, ILocationDal
     {
         public EfLocationDal(CoffeeContext context) : base(context)
         {

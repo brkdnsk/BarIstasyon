@@ -6,7 +6,7 @@ using BarIstasyon.Entity.Entities;
 
 namespace BarIstasyon.DataAccess.EntityFramework
 {
-	public class EfPricingDal : GenericRepository<Base>, IBaseDal
+	public class EfPricingDal : GenericRepository<Pricing>, IPricingDal
 	{
         public EfPricingDal(CoffeeContext context) : base(context)
         {

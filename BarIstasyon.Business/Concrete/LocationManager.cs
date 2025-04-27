@@ -5,9 +5,9 @@ using BarIstasyon.Entity.Entities;
 
 namespace BarIstasyon.Business.Concrete
 {
-    public class LocationManager : GenericManager<Banner>, IBannerService
+    public class LocationManager : GenericManager<Location>, ILocationService
     {
-        public LocationManager(IGenericDal<Banner> genericDal) : base(genericDal)
+        public LocationManager(IGenericDal<Location> genericDal) : base(genericDal)
         {
         }
     }

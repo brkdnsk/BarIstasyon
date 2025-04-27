@@ -9,6 +9,8 @@ using BarIstasyon.DataAccess.Abstract;
 using BarIstasyon.DataAccess.EntityFramework;
 using BarIstasyon.Business.Abstract;
 using BarIstasyon.Business.Concrete;
+using BarIstasyon.DataAccess.Repositories;
+using BarIstasyon.WebUI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,12 +50,44 @@ builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<ICoffeeDal, EfCoffeeDal>();
 builder.Services.AddScoped<ICoffeeService, CoffeeManager>();
 
+builder.Services.AddScoped<ICoffeeDescriptionDal, EfCoffeeDescriptionDal>();
+builder.Services.AddScoped<ICoffeeDescriptionService, CoffeeDescriptionManager>();
+
+builder.Services.AddScoped<ICoffeeFeatureDal, EfCoffeeFeatureDal>();
+builder.Services.AddScoped<ICoffeeFeatureService, CoffeeFeatureManager>();
+
+builder.Services.AddScoped<ICoffeePricingDal, EfCoffeePricingDal>();
+builder.Services.AddScoped<ICoffeePricingService, CoffeePricingManager>();
+
+builder.Services.AddScoped<IContactDal, EfContactDal>();
+builder.Services.AddScoped<IContactService, ContactManager>();
+
+builder.Services.AddScoped<IFeatureDal, EfFeatureDal>();
+builder.Services.AddScoped<IFeatureService, FeatureManager>();
+
+builder.Services.AddScoped<IFooterAddressDal, EfFooterAddressDal>();
+builder.Services.AddScoped<IFooterAddressService, FooterAddressManager>();
+
+builder.Services.AddScoped<ILocationDal, EfLocationDal>();
+builder.Services.AddScoped<ILocationService, LocationManager>();
+
+builder.Services.AddScoped<IPricingDal, EfPricingDal>();
+builder.Services.AddScoped<IPricingService,PricingManager>();
+
+builder.Services.AddScoped<IServiceDal, EfServiceDal>();
+builder.Services.AddScoped<IServiceService>();
+
+builder.Services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
 
 
 
 
 
 
+
+
+builder.Services.AddServiceExtensions();
 
 builder.Services.AddControllersWithViews();
 

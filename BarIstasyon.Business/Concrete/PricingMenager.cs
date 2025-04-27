@@ -5,9 +5,9 @@ using BarIstasyon.Entity.Entities;
 
 namespace BarIstasyon.Business.Concrete
 {
-    public class PricingService : GenericManager<Pricing>, IPricingService
+    public class PricingManager : GenericManager<Pricing>, IPricingService
     {
-        public PricingService(IGenericDal<Pricing> genericDal) : base(genericDal)
+        public PricingManager(IGenericDal<Pricing> genericDal) : base(genericDal)
         {
         }
     }
