@@ -16,8 +16,7 @@ namespace BarIstasyon.Business.Abstract
 
         Task<T> TGetByIdAsync(ObjectId id);
 
-        Task<int> TCountAsync();
-
+        Task<int> GetTCountAsync();
         Task<List<T>> TGetFilteredListAsync(Expression<Func<T, bool>> Predicate);
     }
 }
