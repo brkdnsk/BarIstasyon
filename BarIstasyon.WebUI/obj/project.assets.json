@@ -413,6 +413,7 @@
         "dependencies": {
           "BarIstasyon.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.15",
+          "MongoDB.Bson": "3.3.0",
           "MongoDB.EntityFrameworkCore": "8.3.0"
         },
         "compile": {
@@ -1222,11 +1223,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
