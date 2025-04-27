@@ -36,7 +36,23 @@ builder.Services.AddSingleton<IMongoDatabase>(mongoDatabase);
 builder.Services.AddScoped<IBannerDal, EfBannerDal>();
 builder.Services.AddScoped<IBannerService, BannerManager>();
 
-    
+builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+builder.Services.AddScoped<IAboutService, AboutManager>();
+
+builder.Services.AddScoped<IBaseDal, EfBaseDal>();
+builder.Services.AddScoped<IBaseService, BaseManager>();
+
+builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+
+builder.Services.AddScoped<ICoffeeDal, EfCoffeeDal>();
+builder.Services.AddScoped<ICoffeeService, CoffeeManager>();
+
+
+
+
+
+
 
 
 builder.Services.AddControllersWithViews();
