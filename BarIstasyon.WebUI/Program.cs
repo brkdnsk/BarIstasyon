@@ -1,100 +1,46 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Configuration;
-using MongoDB.Driver; // MongoDB için gerekli using
-using BarIstasyon.DataAccess.Context;
-using Microsoft.EntityFrameworkCore;
-using BarIstasyon.DataAccess.Abstract;
-using BarIstasyon.DataAccess.EntityFramework;
-using BarIstasyon.Business.Abstract;
-using BarIstasyon.Business.Concrete;
-using BarIstasyon.DataAccess.Repositories;
-using BarIstasyon.WebUI.Extensions;
+﻿using BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers;
+using BarIstasyon.DataAccess.Repositories2;
+using BarIstasyon.Entity.Entities;
+using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// MongoDB bağlantısını oluştur
+// Configuration
 var configuration = builder.Configuration;
-var mongoConnectionString = configuration.GetConnectionString("MongoConnection");
-var databaseName = configuration["DatabaseName"];
 
-var mongoClient = new MongoClient(mongoConnectionString);
-var mongoDatabase = mongoClient.GetDatabase(databaseName);
-
-// Eğer MongoDB'yi Dependency Injection ile kullanacaksan:
-
-builder.Services.AddDbContext<CoffeeContext>(option =>
+// MongoDB Bağlantısı ve Veritabanı Ayarları
+builder.Services.AddSingleton<IMongoClient>(new MongoClient(configuration.GetConnectionString("MongoConnection")));
+builder.Services.AddScoped<IMongoDatabase>(serviceProvider =>
 {
-
-    option.UseMongoDB(mongoDatabase.Client, mongoDatabase.DatabaseNamespace.DatabaseName);
-
+    var client = serviceProvider.GetRequiredService<IMongoClient>();
+    var databaseName = configuration.GetValue<string>("DatabaseName"); // DatabaseName ayarını alıyoruz.
+    return client.GetDatabase(databaseName); // MongoDB veritabanına bağlantı.
 });
 
-builder.Services.AddSingleton<IMongoClient>(mongoClient);
-builder.Services.AddSingleton<IMongoDatabase>(mongoDatabase);
+// Repository ve CommandHandler Servisleri
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<CreateAboutCommandHandler>();
 
-// Add services to the container.
-builder.Services.AddScoped<IBannerDal, EfBannerDal>();
-builder.Services.AddScoped<IBannerService, BannerManager>();
-
-builder.Services.AddScoped<IAboutDal, EfAboutDal>();
-builder.Services.AddScoped<IAboutService, AboutManager>();
-
-builder.Services.AddScoped<IBaseDal, EfBaseDal>();
-builder.Services.AddScoped<IBaseService, BaseManager>();
-
-builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
-builder.Services.AddScoped<ICategoryService, CategoryManager>();
-
-builder.Services.AddScoped<ICoffeeDal, EfCoffeeDal>();
-builder.Services.AddScoped<ICoffeeService, CoffeeManager>();
-
-builder.Services.AddScoped<ICoffeeDescriptionDal, EfCoffeeDescriptionDal>();
-builder.Services.AddScoped<ICoffeeDescriptionService, CoffeeDescriptionManager>();
-
-builder.Services.AddScoped<ICoffeeFeatureDal, EfCoffeeFeatureDal>();
-builder.Services.AddScoped<ICoffeeFeatureService, CoffeeFeatureManager>();
-
-builder.Services.AddScoped<ICoffeePricingDal, EfCoffeePricingDal>();
-builder.Services.AddScoped<ICoffeePricingService, CoffeePricingManager>();
-
-builder.Services.AddScoped<IContactDal, EfContactDal>();
-builder.Services.AddScoped<IContactService, ContactManager>();
-
-builder.Services.AddScoped<IFeatureDal, EfFeatureDal>();
-builder.Services.AddScoped<IFeatureService, FeatureManager>();
-
-builder.Services.AddScoped<IFooterAddressDal, EfFooterAddressDal>();
-builder.Services.AddScoped<IFooterAddressService, FooterAddressManager>();
-
-builder.Services.AddScoped<ILocationDal, EfLocationDal>();
-builder.Services.AddScoped<ILocationService, LocationManager>();
-
-builder.Services.AddScoped<IPricingDal, EfPricingDal>();
-builder.Services.AddScoped<IPricingService,PricingManager>();
-
-builder.Services.AddScoped<IServiceDal, EfServiceDal>();
-builder.Services.AddScoped<IServiceService>();
-
-builder.Services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
-builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
-
-
-
-
-
-
-
-
-builder.Services.AddServiceExtensions();
+builder.Services.AddScoped<IRepository<About>>(serviceProvider =>
+{
+    var database = serviceProvider.GetRequiredService<IMongoDatabase>();
+    return new Repository<About>(database, "Abouts");  // "Abouts" koleksiyon adını belirtin
+});
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
+// Swagger ve diğer servis yapılandırmaları
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
@@ -102,9 +48,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(

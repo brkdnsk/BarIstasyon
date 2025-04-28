@@ -1,0 +1,289 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/BarIstasyon.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj",
+        "projectName": "BarIstasyon.Business",
+        "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj",
+        "packagesPath": "/Users/burakdansik/.nuget/packages/",
+        "outputPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/burakdansik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj": {
+                "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj"
+              },
+              "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj": {
+                "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "MongoDB.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj",
+        "projectName": "BarIstasyon.DataAccess",
+        "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj",
+        "packagesPath": "/Users/burakdansik/.nuget/packages/",
+        "outputPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/burakdansik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj": {
+                "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "MongoDB.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj",
+        "projectName": "BarIstasyon.Entity",
+        "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj",
+        "packagesPath": "/Users/burakdansik/.nuget/packages/",
+        "outputPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/burakdansik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/BarIstasyon.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/BarIstasyon.Web.csproj",
+        "projectName": "BarIstasyon.Web",
+        "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/BarIstasyon.Web.csproj",
+        "packagesPath": "/Users/burakdansik/.nuget/packages/",
+        "outputPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/burakdansik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj": {
+                "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj"
+              },
+              "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj": {
+                "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

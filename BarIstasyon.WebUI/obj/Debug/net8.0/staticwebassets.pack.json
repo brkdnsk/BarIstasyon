@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/obj/Debug/net8.0/scopedcss/projectbundle/BarIstasyon.WebUI.bundle.scp.css",
-      "PackagePath": "staticwebassets/BarIstasyon.WebUI.bundle.scp.css"
+      "Id": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/obj/Debug/net8.0/scopedcss/projectbundle/BarIstasyon.WebApi.bundle.scp.css",
+      "PackagePath": "staticwebassets/BarIstasyon.WebApi.bundle.scp.css"
     },
     {
       "Id": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.WebUI/wwwroot/css/site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BarIstasyon.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BarIstasyon.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BarIstasyon.WebUI.props",
-      "PackagePath": "build\\BarIstasyon.WebUI.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BarIstasyon.WebApi.props",
+      "PackagePath": "build\\BarIstasyon.WebApi.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BarIstasyon.WebUI.props",
-      "PackagePath": "buildMultiTargeting\\BarIstasyon.WebUI.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BarIstasyon.WebApi.props",
+      "PackagePath": "buildMultiTargeting\\BarIstasyon.WebApi.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BarIstasyon.WebUI.props",
-      "PackagePath": "buildTransitive\\BarIstasyon.WebUI.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BarIstasyon.WebApi.props",
+      "PackagePath": "buildTransitive\\BarIstasyon.WebApi.props"
     }
   ],
   "ElementsToRemove": []

@@ -3,7 +3,7 @@ namespace BarIstasyon.Entity.Entities
 {
 	public class Coffee
 	{
-        public int BaseID { get; set; }
+        public string BaseID { get; set; }
 
         public Base Base { get; set; }
 

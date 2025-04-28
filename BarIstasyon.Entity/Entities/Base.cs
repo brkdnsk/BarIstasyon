@@ -3,7 +3,7 @@ namespace BarIstasyon.Entity.Entities
 {
 	public class Base
 	{
-        public int BaseID { get; set; }
+        public string BaseID { get; set; }
 
         public string Name { get; set; }
 

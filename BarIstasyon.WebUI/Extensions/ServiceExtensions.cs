@@ -51,9 +51,7 @@ namespace BarIstasyon.WebUI.Extensions
                 Services.AddScoped<IPricingDal, EfPricingDal>();
                 Services.AddScoped<IPricingService, PricingManager>();
 
-                Services.AddScoped<IServiceDal, EfServiceDal>();
-                Services.AddScoped<IServiceService>();
-
+                
                 Services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
                 Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
             

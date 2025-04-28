@@ -11,17 +11,24 @@
     <None Remove="Abstract\" />
     <None Remove="Repositories\" />
     <None Remove="EntityFramework\" />
+    <None Remove="Repositories2\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
     <Folder Include="Abstract\" />
     <Folder Include="Repositories\" />
     <Folder Include="EntityFramework\" />
+    <Folder Include="Repositories2\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.15" />
     <PackageReference Include="MongoDB.EntityFrameworkCore" Version="8.3.0" />
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.15">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Driver" Version="3.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BarIstasyon.Entity\BarIstasyon.Entity.csproj" />

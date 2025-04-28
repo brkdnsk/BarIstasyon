@@ -5,9 +5,11 @@ using MongoDB.EntityFrameworkCore.Extensions;
 
 namespace BarIstasyon.DataAccess.Context
 {
-	public class CoffeeContext : DbContext
+    
+
+    public class CoffeeContext : DbContext
 	{
-		public CoffeeContext(DbContextOptions options) : base(options)
+		public CoffeeContext(DbContextOptions<CoffeeContext> options) : base(options)
 		{
 
 		}
@@ -60,19 +62,6 @@ namespace BarIstasyon.DataAccess.Context
             modelBuilder.Entity<Pricing>().ToCollection("Pricings");
             modelBuilder.Entity<Service>().ToCollection("Services");
             modelBuilder.Entity<SocialMedia>().ToCollection("SocialMedias   ");
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
 

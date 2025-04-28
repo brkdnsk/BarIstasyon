@@ -10,3 +10,4 @@
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/obj/Debug/net6.0/BarIstasyon.Entity.pdb
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/obj/Debug/net6.0/ref/BarIstasyon.Entity.dll
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/obj/Debug/net6.0/BarIstasyon.Entity.sourcelink.json
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/obj/Debug/net6.0/BarIstasyon.Entity.csproj.AssemblyReference.cache

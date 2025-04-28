@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarIstasyon.WebUI", "BarIstasyon.WebUI\BarIstasyon.WebUI.csproj", "{4F85CE0A-E7D2-479F-8B11-F22047DB21FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarIstasyon.WebApi", "BarIstasyon.WebUI\BarIstasyon.WebApi.csproj", "{4F85CE0A-E7D2-479F-8B11-F22047DB21FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarIstasyon.Entity", "BarIstasyon.Entity\BarIstasyon.Entity.csproj", "{4DF68413-C0DD-4FA5-9036-A6FC3C05C357}"
 EndProject

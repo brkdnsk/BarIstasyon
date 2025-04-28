@@ -1,23 +1,18 @@
-﻿<Properties StartupConfiguration="{4F85CE0A-E7D2-479F-8B11-F22047DB21FF}|Default">
+﻿<Properties StartupConfiguration="{4F85CE0A-E7D2-479F-8B11-F22047DB21FF}|BarIstasyon.Web">
   <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="BarIstasyon.WebUI/Program.cs" Line="55" Column="1" />
-    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BarIstasyon" expanded="True">
-            <Node name="BarIstasyon.WebUI" expanded="True" />
+            <Node name="BarIstasyon.Dto" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebUI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebApi PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
 </Properties>

@@ -3,7 +3,7 @@ namespace BarIstasyon.Entity.Entities
 {
 	public class FooterAddress
 	{
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         public string Description { get; set; }
 
