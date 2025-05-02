@@ -20,6 +20,10 @@
     <None Remove="Features\CQRS\Queries\AboutQueries\" />
     <None Remove="Features\CQRS\Commands\AboutCommands\" />
     <None Remove="Features\CQRS\Handlers\AboutHandlers\" />
+    <None Remove="Features\CQRS\Commands\BannerCommands\" />
+    <None Remove="Features\CQRS\Handlers\BannerHandlers\" />
+    <None Remove="Features\CQRS\Queries\BannerQueries\" />
+    <None Remove="Features\CQRS\Results\BannerResults\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -35,6 +39,10 @@
     <Folder Include="Features\CQRS\Queries\AboutQueries\" />
     <Folder Include="Features\CQRS\Commands\AboutCommands\" />
     <Folder Include="Features\CQRS\Handlers\AboutHandlers\" />
+    <Folder Include="Features\CQRS\Commands\BannerCommands\" />
+    <Folder Include="Features\CQRS\Handlers\BannerHandlers\" />
+    <Folder Include="Features\CQRS\Queries\BannerQueries\" />
+    <Folder Include="Features\CQRS\Results\BannerResults\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />

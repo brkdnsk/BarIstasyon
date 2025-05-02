@@ -1,13 +1,15 @@
-﻿using System;
-namespace BarIstasyon.Business.Features.CQRS.Queries.AboutQueries
+﻿using MongoDB.Bson;
+
+namespace BarIstasyon.Business.Features.CQRS.Queries.BannerQueries
 {
     public class GetAboutByIdQuery
     {
-        public GetAboutByIdQuery(int id)
+        public GetAboutByIdQuery(ObjectId id)  // ObjectId olarak değiştiriyoruz
         {
             Id = id;
         }
-        public int Id { get; set; }
+
+        public ObjectId Id { get; set; }  // Id de ObjectId türünde
+        
     }
 }
-

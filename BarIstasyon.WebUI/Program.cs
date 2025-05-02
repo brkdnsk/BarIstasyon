@@ -1,4 +1,5 @@
 ﻿using BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.BannerHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Configuration
 var configuration = builder.Configuration;
-
+builder.Services.AddSwaggerGen();
 // MongoDB Bağlantısı ve Veritabanı Ayarları
 builder.Services.AddSingleton<IMongoClient>(new MongoClient(configuration.GetConnectionString("MongoConnection")));
 builder.Services.AddScoped<IMongoDatabase>(serviceProvider =>
@@ -20,6 +21,7 @@ builder.Services.AddScoped<IMongoDatabase>(serviceProvider =>
 // Repository ve CommandHandler Servisleri
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<CreateAboutCommandHandler>();
+builder.Services.AddScoped<CreateBannerCommandsHandler>();
 
 builder.Services.AddScoped<IRepository<About>>(serviceProvider =>
 {

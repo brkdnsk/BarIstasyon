@@ -1,9 +1,14 @@
 ﻿using System;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace BarIstasyon.Entity.Entities
 {
 	public class About
 	{
-        public string AboutID { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId AboutID { get; set; }
 
         public string Title { get; set; }
 

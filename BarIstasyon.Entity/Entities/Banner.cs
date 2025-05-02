@@ -1,9 +1,15 @@
 ﻿using System;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace BarIstasyon.Entity.Entities
 {
 	public class Banner
 	{
-		public string BannerID { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId BannerID { get; set; }
+    
 
         public string Title { get; set; }
 
