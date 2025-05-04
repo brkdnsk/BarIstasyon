@@ -32,6 +32,7 @@
     <None Remove="Features\CQRS\Handlers\CategoryHandlers\" />
     <None Remove="Features\CQRS\Queries\CategoryQueries\" />
     <None Remove="Features\CQRS\Results\CategoryResults\" />
+    <None Remove="Features\CQRS\Commands\CoffeeCommands\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -59,6 +60,7 @@
     <Folder Include="Features\CQRS\Handlers\CategoryHandlers\" />
     <Folder Include="Features\CQRS\Queries\CategoryQueries\" />
     <Folder Include="Features\CQRS\Results\CategoryResults\" />
+    <Folder Include="Features\CQRS\Commands\CoffeeCommands\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
