@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson;
 
-namespace BarIstasyon.Business.Features.CQRS.Queries.BannerQueries
+namespace BarIstasyon.Business.Features.CQRS.Queries.AboutQueries
 {
     public class GetAboutByIdQuery
     {

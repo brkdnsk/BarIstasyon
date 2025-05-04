@@ -18,6 +18,11 @@ builder.Services.AddScoped<IMongoDatabase>(serviceProvider =>
     return client.GetDatabase(databaseName); // MongoDB veritabanına bağlantı.
 });
 
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+
+
 // Repository ve CommandHandler Servisleri
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<CreateAboutCommandHandler>();
@@ -27,6 +32,11 @@ builder.Services.AddScoped<IRepository<About>>(serviceProvider =>
 {
     var database = serviceProvider.GetRequiredService<IMongoDatabase>();
     return new Repository<About>(database, "Abouts");  // "Abouts" koleksiyon adını belirtin
+});
+builder.Services.AddScoped<IRepository<Banner>>(serviceProvider =>
+{
+    var database = serviceProvider.GetRequiredService<IMongoDatabase>();
+    return new Repository<Banner>(database, "Banners");  // "Banners" koleksiyon adını belirtin
 });
 
 builder.Services.AddControllersWithViews();

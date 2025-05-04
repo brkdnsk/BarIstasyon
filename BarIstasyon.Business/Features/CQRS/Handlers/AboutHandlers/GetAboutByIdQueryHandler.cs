@@ -5,6 +5,7 @@ using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using BarIstasyon.Business.Features.CQRS.Queries.BannerQueries;
+using BarIstasyon.Business.Features.CQRS.Queries.AboutQueries;
 
 namespace BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers
 {
