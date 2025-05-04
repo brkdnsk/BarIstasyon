@@ -3,7 +3,7 @@ namespace BarIstasyon.Business.Features.CQRS.Commands.BannerCommands
 {
 	public class CreateBannerCommands
 	{
-        public string BannerID { get; set; }
+       
 
         public string Title { get; set; }
 
