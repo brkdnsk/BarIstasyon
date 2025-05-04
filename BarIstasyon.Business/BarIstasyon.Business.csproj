@@ -27,6 +27,7 @@
     <None Remove="Features\CQRS\Handlers\BaseHandlers\" />
     <None Remove="Features\CQRS\Commands\BaseCommands\" />
     <None Remove="Features\CQRS\Queries\BaseQueries\" />
+    <None Remove="Features\CQRS\Results\BaseResults\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -49,6 +50,7 @@
     <Folder Include="Features\CQRS\Handlers\BaseHandlers\" />
     <Folder Include="Features\CQRS\Commands\BaseCommands\" />
     <Folder Include="Features\CQRS\Queries\BaseQueries\" />
+    <Folder Include="Features\CQRS\Results\BaseResults\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
