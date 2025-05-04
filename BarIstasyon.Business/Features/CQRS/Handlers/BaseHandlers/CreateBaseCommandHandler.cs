@@ -23,14 +23,14 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.BaseHandlers
                 if (command == null)
                     throw new ArgumentNullException(nameof(command), "Command cannot be null");
 
-                var bases=new Base
+                var newbase=new Base
                 {
                     Name = command.Name,
                     Coffees = command.Coffees,
                     
                 };
 
-                await _repository.CreateAsync(bases);
+                await _repository.CreateAsync(newbase);
                 return true; // Indicates success
             }
             catch (Exception ex)
