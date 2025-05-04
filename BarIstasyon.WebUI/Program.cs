@@ -1,6 +1,7 @@
 ﻿using BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.BannerHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.BaseHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.CategoryHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
@@ -29,6 +30,7 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<CreateAboutCommandHandler>();
 builder.Services.AddScoped<CreateBannerCommandsHandler>();
 builder.Services.AddScoped<CreateBaseCommandHandler>();
+builder.Services.AddScoped<CreateCategoryCommandHandler>();
 
 builder.Services.AddScoped<IRepository<About>>(serviceProvider =>
 {
@@ -44,6 +46,11 @@ builder.Services.AddScoped<IRepository<Base>>(serviceProvider =>
 {
     var database = serviceProvider.GetRequiredService<IMongoDatabase>();
     return new Repository<Base>(database, "Bases");  // "Banners" koleksiyon adını belirtin
+});
+builder.Services.AddScoped<IRepository<Category>>(serviceProvider =>
+{
+    var database = serviceProvider.GetRequiredService<IMongoDatabase>();
+    return new Repository<Category>(database, "Categories");  // "Banners" koleksiyon adını belirtin
 });
 
 builder.Services.AddControllersWithViews();
