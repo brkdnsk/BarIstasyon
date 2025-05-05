@@ -6,6 +6,7 @@ using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeDescriptionHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.CoffeePricingHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.ContactHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
@@ -39,6 +40,8 @@ builder.Services.AddScoped<CreateCoffeeCommandHandler>();
 builder.Services.AddScoped<CreateCoffeeDescriptionCommandHandler>();
 builder.Services.AddScoped<CreateCoffeeFeatureCommandHandler>();
 builder.Services.AddScoped<CreateCoffeePricingCommandHandler>();
+builder.Services.AddScoped<CreateContactCommandHandler>();
+
 
 
 
@@ -81,6 +84,11 @@ builder.Services.AddScoped<IRepository<CoffeePricing>>(serviceProvider =>
 {
     var database = serviceProvider.GetRequiredService<IMongoDatabase>();
     return new Repository<CoffeePricing>(database, "Coffee Pricings");  // "Abouts" koleksiyon adını belirtin
+});
+builder.Services.AddScoped<IRepository<Contact>>(serviceProvider =>
+{
+    var database = serviceProvider.GetRequiredService<IMongoDatabase>();
+    return new Repository<Contact>(database, "Contacts");  // "Abouts" koleksiyon adını belirtin
 });
 
 builder.Services.AddControllersWithViews();
