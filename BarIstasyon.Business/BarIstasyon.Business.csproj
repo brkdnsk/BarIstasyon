@@ -37,6 +37,8 @@
     <None Remove="Features\CQRS\Queries\CoffeeQueries\" />
     <None Remove="Features\CQRS\Results\CoffeeResults\" />
     <None Remove="Features\CQRS\Commands\CoffeeDescriptionCommands\" />
+    <None Remove="Features\CQRS\Handlers\CoffeeDescriptionHandlers\" />
+    <None Remove="Features\CQRS\Queries\CoffeeDescriptionQueries\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -69,6 +71,8 @@
     <Folder Include="Features\CQRS\Queries\CoffeeQueries\" />
     <Folder Include="Features\CQRS\Results\CoffeeResults\" />
     <Folder Include="Features\CQRS\Commands\CoffeeDescriptionCommands\" />
+    <Folder Include="Features\CQRS\Handlers\CoffeeDescriptionHandlers\" />
+    <Folder Include="Features\CQRS\Queries\CoffeeDescriptionQueries\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />

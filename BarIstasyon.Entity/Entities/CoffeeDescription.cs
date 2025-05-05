@@ -1,9 +1,14 @@
 ﻿using System;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace BarIstasyon.Entity.Entities
 {
 	public class CoffeeDescription
-	{
-        public string CoffeeDescriptionID { get; set; }
+    {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId CoffeeDescriptionID { get; set; }
 
         
 
