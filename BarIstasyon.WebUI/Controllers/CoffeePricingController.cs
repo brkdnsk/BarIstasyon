@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
 using BarIstasyon.Business.Features.CQRS.Commands.CoffeePricingCommands;
-
 using BarIstasyon.Business.Features.CQRS.Handlers.CoffeePricingHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BarIstasyon.WebApi.Controllers
+namespace BarIstasyon.WebApi.Controllers.CoffeePricingControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CoffeePricingController : ControllerBase  // ControllerBase, API controller'ları için daha uygun bir sınıftır.
+    public class CoffeePricing : ControllerBase  // ControllerBase, API controller'ları için daha uygun bir sınıftır.
     {
         private readonly CreateCoffeePricingCommandHandler _createCoffeePricingCommandHandler;
 
-        public CoffeePricingController(CreateCoffeePricingCommandHandler _createCoffeePricingCommandHandler)
+        public CoffeePricing(CreateCoffeePricingCommandHandler createCoffeePricingsCommandHandler)
         {
-            _createCoffeePricingCommandHandler = _createCoffeePricingCommandHandler;
+            _createCoffeePricingCommandHandler = createCoffeePricingsCommandHandler;
         }
 
         [HttpPost]
@@ -32,7 +31,7 @@ namespace BarIstasyon.WebApi.Controllers
             try
             {
                 await _createCoffeePricingCommandHandler.Handle(command);
-                return Ok("Kahve Fiyat Bilgisi Eklendi");
+                return Ok("Kahve Açıklaması Bilgisi Eklendi");
             }
             catch (Exception ex)
             {

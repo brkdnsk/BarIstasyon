@@ -12,7 +12,8 @@ namespace BarIstasyon.Entity.Entities
 
        
 
-        public Coffee Coffee { get; set; }
+
+        public int EquipmentPrice { get;  set; }
     }
 }
 

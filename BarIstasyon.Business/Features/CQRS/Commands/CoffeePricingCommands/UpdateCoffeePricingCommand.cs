@@ -5,7 +5,8 @@ namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeePricingCommands
 {
 	public class UpdateCoffeePricingCommand
 	{
-        public Coffee Coffee { get; set; }
+        
+        public int EquipmentPrice { get; set; }
     }
 }
 

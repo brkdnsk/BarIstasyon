@@ -25,10 +25,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeePricingHandlers
 
                 var coffeePricing = new CoffeePricing
                 {
-
-                   Coffee=command.Coffee,
-
-
+                    EquipmentPrice = command.EquipmentPrice,
 
 
                 };
@@ -40,7 +37,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeePricingHandlers
             {
                 // Log the exception if necessary
                 // You can use a logging framework like Serilog, NLog, or log4net.
-                throw new InvalidOperationException("An error occurred while creating Coffee entry.", ex);
+                throw new InvalidOperationException("An error occurred while creating Category entry.", ex);
             }
         }
     }
