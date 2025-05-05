@@ -2,9 +2,9 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace BarIstasyon.Entity.Entities
+namespace BarIstasyon.Business.Features.CQRS.Results.ContactResults
 {
-	public class Contact
+	public class GetContactByIdQueryResults
 	{
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]

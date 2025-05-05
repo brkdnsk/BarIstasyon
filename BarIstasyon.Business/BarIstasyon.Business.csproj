@@ -48,6 +48,10 @@
     <None Remove="Features\CQRS\Handlers\CoffeePricingHandlers\" />
     <None Remove="Features\CQRS\Queries\CoffeePricingQueries\" />
     <None Remove="Features\CQRS\Results\CoffeePricingResults\" />
+    <None Remove="Features\CQRS\Commands\ContactCommands\" />
+    <None Remove="Features\CQRS\Handlers\ContactHandlers\" />
+    <None Remove="Features\CQRS\Queries\ContactQueries\" />
+    <None Remove="Features\CQRS\Results\ContactResults\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -91,6 +95,10 @@
     <Folder Include="Features\CQRS\Handlers\CoffeePricingHandlers\" />
     <Folder Include="Features\CQRS\Queries\CoffeePricingQueries\" />
     <Folder Include="Features\CQRS\Results\CoffeePricingResults\" />
+    <Folder Include="Features\CQRS\Commands\ContactCommands\" />
+    <Folder Include="Features\CQRS\Handlers\ContactHandlers\" />
+    <Folder Include="Features\CQRS\Queries\ContactQueries\" />
+    <Folder Include="Features\CQRS\Results\ContactResults\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
