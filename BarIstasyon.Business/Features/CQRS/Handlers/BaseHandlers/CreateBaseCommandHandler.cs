@@ -26,7 +26,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.BaseHandlers
                 var newbase=new Base
                 {
                     Name = command.Name,
-                    Coffees = command.Coffees,
+                   
                     
                 };
 

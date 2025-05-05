@@ -7,7 +7,7 @@ namespace BarIstasyon.Business.Features.CQRS.Results.CoffeeResults
 	public class GetCoffeeQueryResults
 	{
         public ObjectId CoffeeId { get; set; }
-        public string BaseID { get; set; }
+        public string BasesID { get; set; }
 
         public Base Base { get; set; }
 
@@ -31,11 +31,7 @@ namespace BarIstasyon.Business.Features.CQRS.Results.CoffeeResults
 
         public string BigImageURL { get; set; }
 
-        public List<CoffeeFeature> CoffeeFeatures { get; set; }
-
-        public List<CoffeeDescription> CoffeeDescriptions { get; set; }
-
-        public List<CoffeePricing> CoffeePricings { get; set; }
+       
     }
 }
 

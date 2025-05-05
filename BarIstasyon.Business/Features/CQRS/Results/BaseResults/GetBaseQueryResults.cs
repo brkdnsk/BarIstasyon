@@ -10,7 +10,7 @@ namespace BarIstasyon.Business.Features.CQRS.Results.BaseResults
 
         public string Name { get; set; }
 
-        public List<Coffee> Coffees { get; set; }
+       
     }
 }
 

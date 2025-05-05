@@ -25,7 +25,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeHandlers
 
                 var coffee = new Coffee
                 {
-                    Base=command.Base,
+                  
                     CoverImageURL=command.CoverImageURL,
                     WaterML=command.WaterML,
                     CoffeeML=command.CoffeeML,
@@ -36,7 +36,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeHandlers
                     BrewingTime=command.BrewingTime,
                     BrewingType=command.BrewingType,
                     BigImageURL=command.BigImageURL,
-
+                    
 
 
 

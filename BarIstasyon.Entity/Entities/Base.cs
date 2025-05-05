@@ -12,7 +12,6 @@ namespace BarIstasyon.Entity.Entities
 
         public string Name { get; set; }
 
-        public List<Coffee> Coffees { get; set; }
     }
 }
 

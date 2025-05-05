@@ -1,37 +1,31 @@
 ﻿<Properties StartupConfiguration="{4F85CE0A-E7D2-479F-8B11-F22047DB21FF}|BarIstasyon.Web">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.Business/Features/CQRS/Handlers/BaseHandlers/GetBaseQueryHandler.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.Entity/Entities/SocialMedia.cs">
     <Files>
-      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/BaseHandlers/CreateBaseCommandHandler.cs" Line="15" Column="10" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/BaseHandlers/GetBaseByIdQueryHandler.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/BaseHandlers/GetBaseQueryHandler.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.WebUI/Controllers/BaseController.cs" Line="10" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/CoffeeDescription.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/CoffeeFeature.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/CoffeePricing.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/Contact.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/Feature.cs" Line="14" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/FooterAddress.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/Location.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/Service.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Entity/Entities/SocialMedia.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BarIstasyon" expanded="True">
+          <Node name="BarIstasyon">
             <Node name="BarIstasyon.Business">
-              <Node name="Features">
-                <Node name="CQRS">
-                  <Node name="Commands" expanded="True" />
-                  <Node name="Handlers">
-                    <Node name="BaseHandlers">
-                      <Node name="GetBaseQueryHandler.cs" selected="True" />
-                    </Node>
-                  </Node>
-                  <Node name="Queries" expanded="True" />
-                  <Node name="Results" expanded="True" />
-                </Node>
-              </Node>
               <Node name="Interfaces" expanded="True" />
             </Node>
-            <Node name="BarIstasyon.DataAccess" expanded="True">
-              <Node name="Abstract" expanded="True" />
-              <Node name="Repositories2" expanded="True" />
+            <Node name="BarIstasyon.Entity">
+              <Node name="Entities">
+                <Node name="SocialMedia.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="BarIstasyon.Entity" expanded="True">
-              <Node name="Entities" expanded="True" />
-            </Node>
-            <Node name="BarIstasyon.WebApi">
+            <Node name="BarIstasyon.WebApi" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True" />
             </Node>
@@ -40,11 +34,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebApi PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

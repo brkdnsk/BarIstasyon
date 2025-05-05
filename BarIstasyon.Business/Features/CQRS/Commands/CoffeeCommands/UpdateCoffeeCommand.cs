@@ -5,9 +5,7 @@ namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeeCommands
 {
 	public class UpdateCoffeeCommand
 	{
-        public string BaseID { get; set; }
-
-        public Base Base { get; set; }
+        
 
         public string CoverImageURL { get; set; }
 
@@ -29,11 +27,7 @@ namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeeCommands
 
         public string BigImageURL { get; set; }
 
-        public List<CoffeeFeature> CoffeeFeatures { get; set; }
-
-        public List<CoffeeDescription> CoffeeDescriptions { get; set; }
-
-        public List<CoffeePricing> CoffeePricings { get; set; }
+        
     }
 }
 

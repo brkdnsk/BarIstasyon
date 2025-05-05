@@ -9,10 +9,7 @@ namespace BarIstasyon.Entity.Entities
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public ObjectId CoffeeId { get; set; }
-        public string BaseID { get; set; }
-
-        public Base Base { get; set; }
-
+        
         public string CoverImageURL { get; set; }
 
         public int WaterML { get; set; }
@@ -33,11 +30,7 @@ namespace BarIstasyon.Entity.Entities
 
         public string BigImageURL { get; set; }
 
-        public List<CoffeeFeature> CoffeeFeatures { get; set; }
-
-        public List<CoffeeDescription> CoffeeDescriptions { get; set; }
-
-        public List<CoffeePricing> CoffeePricings { get; set; }
+        
     }
 }
 

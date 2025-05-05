@@ -6,7 +6,7 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using BarIstasyon.Business.Features.CQRS.Queries.CoffeeQueries;
 
-namespace BarIstasyon.Business.Features.CQRS.Handlers.CategoryHandlers
+namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeHandlers
 {
     public class GetCoffeeByIdQueryHandler
     {

@@ -9,7 +9,7 @@ namespace BarIstasyon.Business.Features.CQRS.Commands.BaseCommands
 
         public string Name { get; set; }
 
-        public List<Coffee> Coffees { get; set; }
+        
     }
 }
 
