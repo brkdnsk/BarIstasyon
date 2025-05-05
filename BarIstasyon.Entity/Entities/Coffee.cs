@@ -1,8 +1,14 @@
 ﻿using System;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace BarIstasyon.Entity.Entities
 {
 	public class Coffee
 	{
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId CoffeeId { get; set; }
         public string BaseID { get; set; }
 
         public Base Base { get; set; }
