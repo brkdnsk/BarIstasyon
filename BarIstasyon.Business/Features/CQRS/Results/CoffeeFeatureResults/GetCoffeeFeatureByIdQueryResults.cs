@@ -10,9 +10,7 @@ namespace BarIstasyon.Business.Features.CQRS.Results.CoffeeFeatureResults
 
 
 
-        public Coffee Coffee { get; set; }
-
-        public Feature Feature { get; set; }
+        
 
         public int FeatureID { get; set; }
 

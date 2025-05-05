@@ -1,12 +1,13 @@
 ﻿using System;
+using BarIstasyon.Entity.Entities;
 namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeeFeatureCommands
 {
 	public class RemoveCoffeeFeatureCommand
 	{
-        public object CoffeeFeaturesId { get; set; }
+        public object CoffeeFeatureId { get; set; }
         public RemoveCoffeeFeatureCommand(int id)
         {
-            CoffeeFeaturesId = id;
+            CoffeeFeatureId = id;
         }
     }
 }

@@ -1,36 +1,36 @@
 ﻿using System;
 using System.Threading.Tasks;
-using BarIstasyon.Business.Features.CQRS.Commands.CoffeeDescriptionCommands;
+using BarIstasyon.Business.Features.CQRS.Commands.CoffeeFeatureCommands;
+using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers;
+
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 
-namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers
+namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeDescriptionHandlers
 {
-    public class CreateCoffeeFeaturesCommandHandler
+    public class CreateCoffeeFeatureCommandHandler
     {
         private readonly IRepository<CoffeeFeature> _repository;
 
-        public CreateCoffeeFeaturesCommandHandler(IRepository<CoffeeFeature> repository)
+        public CreateCoffeeFeatureCommandHandler(IRepository<CoffeeFeature> repository)
         {
             _repository = repository;
         }
 
-        public async Task<bool> Handle(CreateCoffeeFeaturesCommandHandler command)
+        public async Task<bool> Handle(CreateCoffeeFeatureCommand command)
         {
             try
             {
                 if (command == null)
                     throw new ArgumentNullException(nameof(command), "Command cannot be null");
 
-                var coffeeFeature = new CoffeeFeature
+                var coffeeFeatures = new CoffeeFeature
                 {
-                    
-
-                    
+                   
 
                 };
 
-                await _repository.CreateAsync(coffeeFeature);
+                await _repository.CreateAsync(coffeeFeatures);
                 return true; // Indicates success
             }
             catch (Exception ex)

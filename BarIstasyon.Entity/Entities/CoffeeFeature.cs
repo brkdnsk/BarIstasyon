@@ -12,11 +12,9 @@ namespace BarIstasyon.Entity.Entities
 
        
 
-        public Coffee Coffee { get; set; }
+        
 
-        public Feature Feature { get; set; }
-
-        public int FeatureID { get; set; }
+       
 
         public bool Avaliable { get; set; }
     }
