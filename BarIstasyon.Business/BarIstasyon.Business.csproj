@@ -56,6 +56,7 @@
     <None Remove="Features\CQRS\Handlers\FeatureHandlers\" />
     <None Remove="Features\CQRS\Queries\FeatureQueries\" />
     <None Remove="Features\CQRS\Results\FeatureResults\" />
+    <None Remove="Features\CQRS\Commands\FooterAddressCommands\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -107,6 +108,7 @@
     <Folder Include="Features\CQRS\Handlers\FeatureHandlers\" />
     <Folder Include="Features\CQRS\Queries\FeatureQueries\" />
     <Folder Include="Features\CQRS\Results\FeatureResults\" />
+    <Folder Include="Features\CQRS\Commands\FooterAddressCommands\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
