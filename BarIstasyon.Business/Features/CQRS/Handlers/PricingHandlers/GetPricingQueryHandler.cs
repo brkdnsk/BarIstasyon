@@ -16,7 +16,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.PricingHandlers
             _pricingCollection = database.GetCollection<Pricing>("Pricings");
         }
 
-        public async Task<List<Pricing>> Handle(GetFeatureByIdQuery query)
+        public async Task<List<Pricing>> Handle(GetPricingByIdQuery query)
         {
             var locationList = await _pricingCollection.Find(_ => true).ToListAsync();
             return locationList;
