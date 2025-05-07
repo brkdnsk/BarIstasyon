@@ -73,6 +73,9 @@
     <None Remove="Features\CQRS\Queries\ServiceQueries\" />
     <None Remove="Features\CQRS\Results\ServiceResults\" />
     <None Remove="Features\CQRS\Commands\SocialMediaCommands\" />
+    <None Remove="Features\CQRS\Handlers\SocialMediaHandlers\" />
+    <None Remove="Features\CQRS\Queries\SocialMediaQueries\" />
+    <None Remove="Features\CQRS\Results\SocialMediaResults\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -141,6 +144,9 @@
     <Folder Include="Features\CQRS\Queries\ServiceQueries\" />
     <Folder Include="Features\CQRS\Results\ServiceResults\" />
     <Folder Include="Features\CQRS\Commands\SocialMediaCommands\" />
+    <Folder Include="Features\CQRS\Handlers\SocialMediaHandlers\" />
+    <Folder Include="Features\CQRS\Queries\SocialMediaQueries\" />
+    <Folder Include="Features\CQRS\Results\SocialMediaResults\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
