@@ -65,6 +65,9 @@
     <None Remove="Features\CQRS\Queries\LocationQueries\" />
     <None Remove="Features\CQRS\Results\LocationResults\" />
     <None Remove="Features\CQRS\Commands\PricingCommands\" />
+    <None Remove="Features\CQRS\Handlers\PricingHandlers\" />
+    <None Remove="Features\CQRS\Queries\PricingQueries\" />
+    <None Remove="Features\CQRS\Results\PricingResults\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -125,6 +128,9 @@
     <Folder Include="Features\CQRS\Queries\LocationQueries\" />
     <Folder Include="Features\CQRS\Results\LocationResults\" />
     <Folder Include="Features\CQRS\Commands\PricingCommands\" />
+    <Folder Include="Features\CQRS\Handlers\PricingHandlers\" />
+    <Folder Include="Features\CQRS\Queries\PricingQueries\" />
+    <Folder Include="Features\CQRS\Results\PricingResults\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
