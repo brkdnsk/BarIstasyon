@@ -71,6 +71,8 @@
     <None Remove="Features\CQRS\Commands\ServiceCommands\" />
     <None Remove="Features\CQRS\Handlers\ServiceHandlers\" />
     <None Remove="Features\CQRS\Queries\ServiceQueries\" />
+    <None Remove="Features\CQRS\Results\ServiceResults\" />
+    <None Remove="Features\CQRS\Commands\SocialMediaCommands\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -137,6 +139,8 @@
     <Folder Include="Features\CQRS\Commands\ServiceCommands\" />
     <Folder Include="Features\CQRS\Handlers\ServiceHandlers\" />
     <Folder Include="Features\CQRS\Queries\ServiceQueries\" />
+    <Folder Include="Features\CQRS\Results\ServiceResults\" />
+    <Folder Include="Features\CQRS\Commands\SocialMediaCommands\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />

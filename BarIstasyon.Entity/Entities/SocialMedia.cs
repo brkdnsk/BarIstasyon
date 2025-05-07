@@ -1,9 +1,14 @@
 ﻿using System;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace BarIstasyon.Entity.Entities
 {
 	public class SocialMedia
 	{
-        public string SocialMediaID { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId SocialMediaID { get; set; }
 
         public string Name { get; set; }
 

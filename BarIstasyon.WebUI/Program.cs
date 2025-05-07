@@ -11,6 +11,7 @@ using BarIstasyon.Business.Features.CQRS.Handlers.FeatureHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.FooterAddressHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.LocationHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.PricingHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.ServiceHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
@@ -49,6 +50,7 @@ builder.Services.AddScoped<CreateFeatureCommandHandler>();
 builder.Services.AddScoped<CreateFooterAddressCommandHandler>();
 builder.Services.AddScoped<CreateLocationCommandHandler>();
 builder.Services.AddScoped<CreatePricingCommandHandler>();
+builder.Services.AddScoped<CreateServiceCommandHandler>();
 
 
 
@@ -120,6 +122,11 @@ builder.Services.AddScoped<IRepository<Pricing>>(serviceProvider =>
 {
     var database = serviceProvider.GetRequiredService<IMongoDatabase>();
     return new Repository<Pricing>(database, "Pricings");  // "Abouts" koleksiyon adını belirtin
+});
+builder.Services.AddScoped<IRepository<Service>>(serviceProvider =>
+{
+    var database = serviceProvider.GetRequiredService<IMongoDatabase>();
+    return new Repository<Service>(database, "Services");  // "Abouts" koleksiyon adını belirtin
 });
 
 
