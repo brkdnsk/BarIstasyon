@@ -9,6 +9,7 @@ using BarIstasyon.Business.Features.CQRS.Handlers.CoffeePricingHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.ContactHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.FeatureHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.FooterAddressHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.LocationHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
@@ -45,6 +46,7 @@ builder.Services.AddScoped<CreateCoffeePricingCommandHandler>();
 builder.Services.AddScoped<CreateContactCommandHandler>();
 builder.Services.AddScoped<CreateFeatureCommandHandler>();
 builder.Services.AddScoped<CreateFooterAddressCommandHandler>();
+builder.Services.AddScoped<CreateLocationCommandHandler>();
 
 
 
@@ -106,6 +108,15 @@ builder.Services.AddScoped<IRepository<FooterAddress>>(serviceProvider =>
     var database = serviceProvider.GetRequiredService<IMongoDatabase>();
     return new Repository<FooterAddress>(database, "Footer Addresses");  // "Abouts" koleksiyon adını belirtin
 });
+builder.Services.AddScoped<IRepository<Location>>(serviceProvider =>
+{
+    var database = serviceProvider.GetRequiredService<IMongoDatabase>();
+    return new Repository<Location>(database, "Locations");  // "Abouts" koleksiyon adını belirtin
+});
+
+
+
+
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();

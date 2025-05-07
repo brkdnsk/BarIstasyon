@@ -14,7 +14,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.LocationHandlers
             _locationCollection = database.GetCollection<Location>("Locations");
         }
 
-        public async Task<Location> Handle(GetContactByIdQuery query)
+        public async Task<Location> Handle(GetLocationByIdQuery query)
         {
             // Burada query.Id artık ObjectId türünde
             var filter = Builders<Location>.Filter.Eq(a => a.LocationID, query.Id);  // ObjectId ile filtreleme
