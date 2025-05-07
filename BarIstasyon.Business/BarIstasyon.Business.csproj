@@ -53,6 +53,9 @@
     <None Remove="Features\CQRS\Queries\ContactQueries\" />
     <None Remove="Features\CQRS\Results\ContactResults\" />
     <None Remove="Features\CQRS\Commands\FeatureCommands\" />
+    <None Remove="Features\CQRS\Handlers\FeatureHandlers\" />
+    <None Remove="Features\CQRS\Queries\FeatureQueries\" />
+    <None Remove="Features\CQRS\Results\FeatureResults\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
@@ -101,6 +104,9 @@
     <Folder Include="Features\CQRS\Queries\ContactQueries\" />
     <Folder Include="Features\CQRS\Results\ContactResults\" />
     <Folder Include="Features\CQRS\Commands\FeatureCommands\" />
+    <Folder Include="Features\CQRS\Handlers\FeatureHandlers\" />
+    <Folder Include="Features\CQRS\Queries\FeatureQueries\" />
+    <Folder Include="Features\CQRS\Results\FeatureResults\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
