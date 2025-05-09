@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarIstasyon.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63473f8ca11208badd684257168a753698da5dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a00dab45894609e8667d8ff54a3c25e98dec38b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarIstasyon.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarIstasyon.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,7 +9,7 @@ namespace BarIstasyon.Business.Features.CQRS.Commands.BaseCommands
 	{
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string id { get; set; }
+        public ObjectId id { get; set; }
 
         public string Name { get; set; }
 
