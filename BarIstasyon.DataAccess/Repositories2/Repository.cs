@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -55,7 +56,7 @@ namespace BarIstasyon.DataAccess.Repositories2
             }
         }
 
-        public async Task<T?> GetByIdAsync(int id)
+        public async Task<T?> GetByIdAsync(Object id)
         {
             try
             {
@@ -70,32 +71,38 @@ namespace BarIstasyon.DataAccess.Repositories2
             }
         }
 
-        public async Task RemoveAsync(T entity)
+        public async Task RemoveAsync(ObjectId id)
         {
             try
             {
-                var filter = Builders<T>.Filter.Eq("_id", entity);
-                await _collection.DeleteOneAsync(filter);
+                var filter = Builders<T>.Filter.Eq("_id", id);
+                var result = await _collection.DeleteOneAsync(filter);
+
+                if (result.DeletedCount == 0)
+                {
+                    throw new Exception("Silme işlemi başarısız oldu, belge bulunamadı.");
+                }
             }
             catch (Exception ex)
             {
-                // Loglama yapılabilir, exception yönetimi
                 throw new InvalidOperationException("Bir hata oluştu: " + ex.Message);
+            }
+        }
+        public async Task UpdateAsync(ObjectId id, T entity)
+        {
+            var filter = Builders<T>.Filter.Eq("_id", id);
+            var updateResult = await _collection.ReplaceOneAsync(filter, entity);
+            if (updateResult.MatchedCount == 0)
+            {
+                throw new Exception("Belge bulunamadı, güncelleme yapılmadı.");
+            }
+
+            if (updateResult.ModifiedCount == 0)
+            {
+                throw new Exception("Güncellenmiş veri yok. Veriler zaten aynı.");
             }
         }
 
-        public async Task UpdateAsync(T entity)
-        {
-            try
-            {
-                var filter = Builders<T>.Filter.Eq("_id", entity);
-                await _collection.ReplaceOneAsync(filter, entity);
-            }
-            catch (Exception ex)
-            {
-                // Loglama yapılabilir, exception yönetimi
-                throw new InvalidOperationException("Bir hata oluştu: " + ex.Message);
-            }
-        }
+
     }
 }

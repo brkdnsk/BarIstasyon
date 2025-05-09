@@ -1,10 +1,14 @@
 ﻿using System;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace BarIstasyon.Business.Features.CQRS.Commands.BannerCommands
 {
 	public class UpdateBannerCommands
 	{
-
-        public string BannerID { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId id { get; set; }
 
         public string Title { get; set; }
 

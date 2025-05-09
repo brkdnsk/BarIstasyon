@@ -4,12 +4,11 @@ namespace BarIstasyon.Business.Features.CQRS.Queries.BannerQueries
 {
     public class GetBannerByIdQuery
     {
-        public GetBannerByIdQuery(ObjectId id)  
+        public ObjectId Id { get; set; }
+
+        public GetBannerByIdQuery(ObjectId id)
         {
             Id = id;
         }
-
-        public ObjectId Id { get; set; }  
-
     }
 }

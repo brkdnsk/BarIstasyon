@@ -1,36 +1,60 @@
-﻿<Properties StartupConfiguration="{4F85CE0A-E7D2-479F-8B11-F22047DB21FF}|BarIstasyon.Web">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebApi PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{BB2EF90B-31FE-409E-8523-9CB2D8A4B75A}|BarIstasyon.API">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebAPI/Controllers/AboutsController.cs">
+    <Files>
+      <File FileName="BarIstasyon.WebAPI/Controllers/AboutsController.cs" Line="122" Column="10" />
+      <File FileName="BarIstasyon.DataAccess/Repositories2/IRepository.cs" Line="14" Column="39" />
+      <File FileName="BarIstasyon.DataAccess/Repositories2/Repository.cs" Line="74" Column="51" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Commands/AboutCommands/RemoveAboutCommand.cs" Line="17" Column="6" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/AboutHandlers/RemoveAboutCommandHandler.cs" Line="29" Column="1" />
+      <File FileName="BarIstasyon.WebAPI/Program.cs" Line="42" Column="1" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Queries/AboutQueries/GetAboutByIdQuery.cs" Line="13" Column="6" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/AboutHandlers/CreateAboutCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/AboutHandlers/GetAboutByIdQueryHandler.cs" Line="15" Column="30" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BarIstasyon" expanded="True">
             <Node name="BarIstasyon.Business">
-              <Node name="Features" expanded="True">
-                <Node name="CQRS" expanded="True">
-                  <Node name="Commands" expanded="True" />
+              <Node name="Features">
+                <Node name="CQRS">
                   <Node name="Handlers" expanded="True">
                     <Node name="AboutHandlers" expanded="True" />
+                    <Node name="BannerHandlers" expanded="True" />
                   </Node>
-                  <Node name="Results" expanded="True">
-                    <Node name="AboutResults" expanded="True" />
+                  <Node name="Queries">
+                    <Node name="BannerQueries" expanded="True" />
+                    <Node name="BaseQueries" expanded="True" />
                   </Node>
                 </Node>
               </Node>
+              <Node name="Interfaces" expanded="True" />
             </Node>
-            <Node name="BarIstasyon.Entity" expanded="True" />
-            <Node name="BarIstasyon.WebApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
+            <Node name="BarIstasyon.DataAccess">
+              <Node name="Context" expanded="True" />
+              <Node name="Repositories2" expanded="True" />
+            </Node>
+            <Node name="BarIstasyon.Entity" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="BarIstasyon.WebAPI">
+              <Node name="Controllers" expanded="True">
+                <Node name="AboutsController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <DisabledProjects>
+    <String>BarIstasyon.WebUI/BarIstasyon.WebAPI.csproj</String>
+  </DisabledProjects>
 </Properties>

@@ -8,7 +8,7 @@ namespace BarIstasyon.Entity.Entities
 	{
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public ObjectId BannerID { get; set; }
+        public ObjectId BannerId { get; set; }
     
 
         public string Title { get; set; }

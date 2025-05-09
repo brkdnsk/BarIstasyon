@@ -1,36 +1,27 @@
 ﻿using System;
 using System.Threading.Tasks;
-using BarIstasyon.Business.Features.CQRS.Commands.AboutCommands;
+using BarIstasyon.Business.Features.CQRS.Commands.BannerCommands;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using BarIstasyon.Business.Features.CQRS.Queries.BannerQueries;
 
+using BarIstasyon.DataAccess.Repositories2;
+
 namespace BarIstasyon.Business.Features.CQRS.Handlers.BannerHandlers
 {
     public class GetBannerByIdQueryHandler
     {
-        private readonly IMongoCollection<Banner> _bannerCollection;
+        private readonly IRepository<Banner> _repository;
 
-        public GetBannerByIdQueryHandler(IMongoDatabase database)
+        public GetBannerByIdQueryHandler(IRepository<Banner> repository)
         {
-            _bannerCollection = database.GetCollection<Banner>("Banner");
+            _repository = repository;
         }
 
-        public async Task<Banner> Handle(GetBannerByIdQuery query)
+        public async Task<Banner?> Handle(GetBannerByIdQuery query)
         {
-            // Burada query.Id artık ObjectId türünde
-            var filter = Builders<Banner>.Filter.Eq(a => a.BannerID, query.Id);  // ObjectId ile filtreleme
-
-            var about = await _bannerCollection.Find(filter).FirstOrDefaultAsync();
-
-            if (about == null)
-            {
-                throw new Exception("About kaydı bulunamadı.");
-            }
-
-            return about;
+            return await _repository.GetByIdAsync(query.Id);
         }
-
     }
 }
