@@ -1,13 +1,19 @@
 ﻿using System;
-namespace BarIstasyon.Business.Features.CQRS.Commands.BaseCommands
+using MongoDB.Bson;
+
+namespace BarIstasyon.Business.Features.CQRS.Commands.AboutCommands
 {
-	public class RemoveBaseCommand
-	{
-        public object BaseId { get; set; }
-        public RemoveBaseCommand(int id)
+    public class RemoveBaseCommand
+    {
+        public ObjectId id { get; set; }
+
+        public RemoveBaseCommand(ObjectId id)
         {
-            BaseId = id;
+            this.id = id;
         }
+
+        // Parametresiz constructor da ekleyin, model binding için gerekli olabilir
+        public RemoveBaseCommand() { }
     }
 }
 
