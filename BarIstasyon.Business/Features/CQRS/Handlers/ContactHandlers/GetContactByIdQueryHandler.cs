@@ -5,11 +5,11 @@ using BarIstasyon.Business.Features.CQRS.Queries;
 
 namespace BarIstasyon.Business.Features.CQRS.Handlers.ContactHandlers
 {
-    public class GetcContactByIdQueryHandler
+    public class GetContactByIdQueryHandler
     {
         private readonly IMongoCollection<Contact> _contactCollection;
 
-        public GetcContactByIdQueryHandler(IMongoDatabase database)
+        public GetContactByIdQueryHandler(IMongoDatabase database)
         {
             _contactCollection = database.GetCollection<Contact>("Contacts");
         }
