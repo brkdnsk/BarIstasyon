@@ -6,6 +6,7 @@ using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeDescriptionHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeatureHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.ContactHandlers;
 using BarIstasyon.Business.Features.CQRS.Queries.CoffeeFeaturesQueries;
 
 using BarIstasyon.DataAccess.Repositories2;
@@ -66,6 +67,11 @@ builder.Services.AddScoped<IRepository<CoffeeFeature>>(sp =>
     var db = sp.GetRequiredService<IMongoDatabase>();
     return new Repository<CoffeeFeature>(db, "Coffee Features");
 });
+builder.Services.AddScoped<IRepository<Contact>>(sp =>
+{
+    var db = sp.GetRequiredService<IMongoDatabase>();
+    return new Repository<Contact>(db, "Coffee Features");
+});
 // Handler servisleri
 builder.Services.AddScoped<CreateAboutCommandHandler>();
 builder.Services.AddScoped<UpdateAboutCommandHandler>();
@@ -117,6 +123,14 @@ builder.Services.AddScoped<UpdateCoffeeFeatureCommandHandler>();
 builder.Services.AddScoped<GetAllCoffeeFeaturesQueryHandler>();
 builder.Services.AddScoped<RemoveCoffeeFeatureCommandHandler>();
 builder.Services.AddScoped<GetCoffeeFeatureByIdQueryHandler>();
+
+
+builder.Services.AddScoped<CreateContactCommandHandler>();
+builder.Services.AddScoped<UpdateContactCommandHandler>();
+builder.Services.AddScoped<GetAllContactQueryHandler>();
+builder.Services.AddScoped<RemoveContactCommandHandler>();
+builder.Services.AddScoped<GetContactByIdQueryHandler>();
+
 
 // Controller servisleri
 builder.Services.AddControllers();
