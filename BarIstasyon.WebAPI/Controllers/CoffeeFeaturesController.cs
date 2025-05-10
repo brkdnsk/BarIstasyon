@@ -16,17 +16,17 @@ namespace BarIstasyon.WebApi.Controllers
         
     {
         private readonly CreateCoffeeFeatureCommandHandler _createCoffeeFeatureCommandHandler;
-        private readonly GetCoffeeFeaturesQueryHandler _getAllCoffeeFeatureQueryHandler;
+        private readonly GetAllCoffeeFeaturesQueryHandler _getAllCoffeeFeatureQueryHandler;
         private readonly UpdateCoffeeFeatureCommandHandler _updateCoffeeFeatureCommandHandler;
         private readonly RemoveCoffeeFeatureCommandHandler _removeCoffeeFeatureCommandHandler;
-        private readonly GetAllCoffeeFeaturesByIdQueryHandler _getCoffeeFeatureByIdQueryHandler;
+        private readonly GetCoffeeFeatureByIdQueryHandler _getCoffeeFeatureByIdQueryHandler;
 
         public CoffeeFeaturesController(
             CreateCoffeeFeatureCommandHandler createCoffeeFeatureCommandHandler,
-            GetCoffeeFeaturesQueryHandler getAllCoffeeFeatureQueryHandler,
+            GetAllCoffeeFeaturesQueryHandler getAllCoffeeFeatureQueryHandler,
             UpdateCoffeeFeatureCommandHandler updateCoffeeFeatureCommandHandler,
             RemoveCoffeeFeatureCommandHandler removeCoffeeFeatureCommandHandler,
-            GetAllCoffeeFeaturesByIdQueryHandler getCoffeeFeatureByIdQueryHandler)
+            GetCoffeeFeatureByIdQueryHandler getCoffeeFeatureByIdQueryHandler)
         {
             _createCoffeeFeatureCommandHandler = createCoffeeFeatureCommandHandler;
             _getAllCoffeeFeatureQueryHandler = getAllCoffeeFeatureQueryHandler;

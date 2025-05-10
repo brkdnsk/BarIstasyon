@@ -1,25 +1,36 @@
 ﻿using System;
-using BarIstasyon.Business.Features.CQRS.Queries.CategoryQueries;
-using BarIstasyon.Business.Features.CQRS.Queries.CoffeeFeaturesQueries;
+using System.Threading.Tasks;
+using BarIstasyon.Business.Features.CQRS.Commands.CoffeeFeatureCommands;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
+using MongoDB.Bson;
+using BarIstasyon.Business.Features.CQRS.Queries.CoffeeFeaturesQueries;
 
-namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeatureHandlers
+namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers
 {
-	public class GetCoffeeFeaturesByIdQueryHandler
-	{
+    public class GetCoffeeFeatureByIdQueryHandler
+    {
         private readonly IMongoCollection<CoffeeFeature> _coffeeFeatureCollection;
 
-        public GetCoffeeFeaturesByIdQueryHandler(IMongoDatabase database)
+        public GetCoffeeFeatureByIdQueryHandler(IMongoDatabase database)
         {
-            _coffeeFeatureCollection = database.GetCollection<CoffeeFeature>("Coffee Features");
+            _coffeeFeatureCollection = database.GetCollection<CoffeeFeature>("Coffee Feature");
         }
 
-        public async Task<List<CoffeeFeature>> Handle(GetAllCoffeeFeatureQuery query)
+        public async Task<CoffeeFeature> Handle(GetCoffeeFeatureByIdQuery query)
         {
-            var coffeeFeatureList = await _coffeeFeatureCollection.Find(_ => true).ToListAsync();
-            return coffeeFeatureList;
+            // Burada query.Id artık ObjectId türünde
+            var filter = Builders<CoffeeFeature>.Filter.Eq(a => a.CoffeeFeatureID, query.Id);  // ObjectId ile filtreleme
+
+            var coffeeFeature = await _coffeeFeatureCollection.Find(filter).FirstOrDefaultAsync();
+
+            if (coffeeFeature == null)
+            {
+                throw new Exception("CoffeeFeature kaydı bulunamadı.");
+            }
+
+            return coffeeFeature;
         }
+
     }
 }
-

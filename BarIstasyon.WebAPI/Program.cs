@@ -116,7 +116,7 @@ builder.Services.AddScoped<CreateCoffeeFeatureCommandHandler>();
 builder.Services.AddScoped<UpdateCoffeeFeatureCommandHandler>();
 builder.Services.AddScoped<GetAllCoffeeFeaturesQueryHandler>();
 builder.Services.AddScoped<RemoveCoffeeFeatureCommandHandler>();
-builder.Services.AddScoped<GetCoffeeFeaturesByIdQueryHandler>();
+builder.Services.AddScoped<GetCoffeeFeatureByIdQueryHandler>();
 
 // Controller servisleri
 builder.Services.AddControllers();

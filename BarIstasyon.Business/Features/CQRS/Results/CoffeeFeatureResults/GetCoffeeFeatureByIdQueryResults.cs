@@ -12,7 +12,7 @@ namespace BarIstasyon.Business.Features.CQRS.Results.CoffeeFeatureResults
 
         
 
-        public int FeatureID { get; set; }
+        
 
         public bool Avaliable { get; set; }
     }
