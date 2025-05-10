@@ -1,6 +1,7 @@
 using BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.BannerHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.BaseHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.CategoryHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
@@ -39,6 +40,11 @@ builder.Services.AddScoped<IRepository<Base>>(sp =>
     var db = sp.GetRequiredService<IMongoDatabase>();
     return new Repository<Base>(db, "Bases");
 });
+builder.Services.AddScoped<IRepository<Category>>(sp =>
+{
+    var db = sp.GetRequiredService<IMongoDatabase>();
+    return new Repository<Category>(db, "Categories");
+});
 // Handler servisleri
 builder.Services.AddScoped<CreateAboutCommandHandler>();
 builder.Services.AddScoped<UpdateAboutCommandHandler>();
@@ -62,6 +68,13 @@ builder.Services.AddScoped<UpdateBaseCommandHandler>();
 builder.Services.AddScoped<GetAllBaseQueryHandler>();
 builder.Services.AddScoped<RemoveBaseCommandHandler>();
 builder.Services.AddScoped<GetBaseByIdQueryHandler>();
+
+
+builder.Services.AddScoped<CreateCategoryCommandHandler>();
+builder.Services.AddScoped<UpdateCategoryCommandHandler>();
+builder.Services.AddScoped<GetAllCategoryQueryHandler>();
+builder.Services.AddScoped<RemoveCategoryCommandHandler>();
+builder.Services.AddScoped<GetCategoryByIdQueryHandler>();
 
 
 // Controller servisleri
