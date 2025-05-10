@@ -1,13 +1,20 @@
 ﻿using System;
+using MongoDB.Bson;
+
 namespace BarIstasyon.Business.Features.CQRS.Commands.ContactCommands
 {
-	public class RemoveContactCommand
-	{
-        public object ContactId { get; set; }
-        public RemoveContactCommand(int id)
+    public class RemoveContactCommand
+    {
+        public ObjectId id { get; set; }
+
+        public RemoveContactCommand(ObjectId id)
         {
-            ContactId = id;
+            this.id = id;
         }
+
+        // Parametresiz constructor da ekleyin, model binding için gerekli olabilir
+        public RemoveContactCommand() { }
     }
 }
+
 
