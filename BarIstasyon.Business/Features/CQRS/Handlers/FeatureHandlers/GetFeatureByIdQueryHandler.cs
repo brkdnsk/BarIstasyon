@@ -5,16 +5,16 @@ using BarIstasyon.Business.Features.CQRS.Queries;
 
 namespace BarIstasyon.Business.Features.CQRS.Handlers.FeatureHandlers
 {
-    public class GetcFeatureByIdQueryHandler
+    public class GetFeatureByIdQueryHandler
     {
         private readonly IMongoCollection<Feature> _featureCollection;
 
-        public GetcFeatureByIdQueryHandler(IMongoDatabase database)
+        public GetFeatureByIdQueryHandler(IMongoDatabase database)
         {
             _featureCollection = database.GetCollection<Feature>("Features");
         }
 
-        public async Task<Feature> Handle(GetContactByIdQuery query)
+        public async Task<Feature> Handle(GetFeatureByIdQuery query)
         {
             // Burada query.Id artık ObjectId türünde
             var filter = Builders<Feature>.Filter.Eq(a => a.FeatureID, query.Id);  // ObjectId ile filtreleme
