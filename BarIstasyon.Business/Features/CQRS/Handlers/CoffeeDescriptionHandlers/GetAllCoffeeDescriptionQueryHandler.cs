@@ -4,6 +4,7 @@ using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
 using BarIstasyon.Business.Features.CQRS.Queries.BaseQueries;
 using BarIstasyon.Business.Features.CQRS.Queries.BaseQueries;
+using BarIstasyon.Business.Features.CQRS.Queries.CoffeeDescriptionQueries;
 
 namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeDescriptionHandlers
 {
@@ -16,7 +17,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeDescriptionHandlers
             _coffeeDescriptionCollection = database.GetCollection<CoffeeDescription>("CoffeeDescriptions");
         }
 
-        public async Task<List<CoffeeDescription>> Handle(GetAllBaseQuery query)
+        public async Task<List<CoffeeDescription>> Handle(GetAllCoffeeDescriptionQuery query)
         {
             var coffeeDescriptionList = await _coffeeDescriptionCollection.Find(_ => true).ToListAsync();
             return coffeeDescriptionList;

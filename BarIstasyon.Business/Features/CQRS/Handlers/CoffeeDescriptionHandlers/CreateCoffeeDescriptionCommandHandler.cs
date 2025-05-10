@@ -24,7 +24,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeDescriptionHandlers
 
                 var coffeeDescription = new CoffeeDescription
                 {
-                    Coffee = command.Coffee,
+                   
                     Details = command.Details,
                   
                 };
