@@ -6,7 +6,7 @@ using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 
-namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeDescriptionHandlers
+namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeatureHandlers
 {
     public class CreateCoffeeFeatureCommandHandler
     {
