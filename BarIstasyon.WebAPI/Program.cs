@@ -9,6 +9,10 @@ using BarIstasyon.Business.Features.CQRS.Handlers.CoffeeHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.ContactHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.FeatureHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.FooterAddressHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.LocationHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.PricingHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.ServiceHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.SocialMediaHandlers;
 using BarIstasyon.Business.Features.CQRS.Queries.CoffeeFeaturesQueries;
 
 using BarIstasyon.DataAccess.Repositories2;
@@ -83,6 +87,24 @@ builder.Services.AddScoped<IRepository<FooterAddress>>(sp =>
 {
     var db = sp.GetRequiredService<IMongoDatabase>();
     return new Repository<FooterAddress>(db, "Footer Address");
+}); builder.Services.AddScoped<IRepository<Location>>(sp =>
+{
+    var db = sp.GetRequiredService<IMongoDatabase>();
+    return new Repository<Location>(db, "Location");
+});
+builder.Services.AddScoped<IRepository<Pricing>>(sp =>
+{
+    var db = sp.GetRequiredService<IMongoDatabase>();
+    return new Repository<Pricing>(db, "Pricings");
+});
+builder.Services.AddScoped<IRepository<Service>>(sp =>
+{
+    var db = sp.GetRequiredService<IMongoDatabase>();
+    return new Repository<Service>(db, "Services");
+}); builder.Services.AddScoped<IRepository<SocialMedia>>(sp =>
+{
+    var db = sp.GetRequiredService<IMongoDatabase>();
+    return new Repository<SocialMedia>(db, "SocialMedias");
 });
 // Handler servisleri
 builder.Services.AddScoped<CreateAboutCommandHandler>();
@@ -156,6 +178,35 @@ builder.Services.AddScoped<UpdateFooterAddressCommandHandler>();
 builder.Services.AddScoped<GetAllFooterAddressQueryHandler>();
 builder.Services.AddScoped<RemoveFooterAddressCommandHandler>();
 builder.Services.AddScoped<GetFooterAddressByIdQueryHandler>();
+
+
+builder.Services.AddScoped<CreateLocationCommandHandler>();
+builder.Services.AddScoped<UpdateLocationCommandHandler>();
+builder.Services.AddScoped<GetAllLocationQueryHandler>();
+builder.Services.AddScoped<RemoveLocationCommandHandler>();
+builder.Services.AddScoped<GetLocationByIdQueryHandler>();
+
+
+builder.Services.AddScoped<CreatePricingCommandHandler>();
+builder.Services.AddScoped<UpdatePricingCommandHandler>();
+builder.Services.AddScoped<GetAllPricingQueryHandler>();
+builder.Services.AddScoped<RemovePricingCommandHandler>();
+builder.Services.AddScoped<GetPricingByIdQueryHandler>();
+
+
+builder.Services.AddScoped<CreateServiceCommandHandler>();
+builder.Services.AddScoped<UpdateServiceCommandHandler>();
+builder.Services.AddScoped<GetAllServiceQueryHandler>();
+builder.Services.AddScoped<RemoveServiceCommandHandler>();
+builder.Services.AddScoped<GetServiceByIdQueryHandler>();
+
+
+builder.Services.AddScoped<CreateSocialMediaCommandHandler>();
+builder.Services.AddScoped<UpdateSocialMediaCommandHandler>();
+builder.Services.AddScoped<GetAllSocialMediaQueryHandler>();
+builder.Services.AddScoped<RemoveSocialMediaCommandHandler>();
+builder.Services.AddScoped<GetSocialMediaByIdQueryHandler>();
+
 
 
 

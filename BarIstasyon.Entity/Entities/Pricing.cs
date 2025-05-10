@@ -12,7 +12,7 @@ namespace BarIstasyon.Entity.Entities
 
         public string Name { get; set; }
 
-        public List<CoffeePricing> CoffeePricings { get; set; }
+       
     }
 }
 

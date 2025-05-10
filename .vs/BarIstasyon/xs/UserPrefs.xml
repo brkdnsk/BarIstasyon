@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{BB2EF90B-31FE-409E-8523-9CB2D8A4B75A}|BarIstasyon.API">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebAPI/Controllers/BannersController.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <DisabledProjects>
+    <String>BarIstasyon.WebUI/BarIstasyon.WebAPI.csproj</String>
+  </DisabledProjects>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebAPI/Program.cs">
     <Files>
-      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/BaseHandlers/UpdateBaseCommandHandler.cs" Line="11" Column="38" />
-      <File FileName="BarIstasyon.Entity/Entities/Base.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.DataAccess/Repositories2/IRepository.cs" Line="8" Column="52" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/BannerHandlers/UpdateBannerCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.DataAccess/Repositories2/Repository.cs" Line="10" Column="34" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Commands/BaseCommands/UpdateBaseCommand.cs" Line="12" Column="24" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Results/BannerResults/GetBannerByIdQueryResults.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Results/BaseResults/GetBaseByIdQueryResults.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Results/BaseResults/GetBaseQueryResults.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.Business/Features/CQRS/Results/BannerResults/GetBannerQueryResults.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.WebAPI/Controllers/BasesController.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.WebAPI/Controllers/BannersController.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.WebAPI/Controllers/FeaturesController.cs" Line="82" Column="14" />
+      <File FileName="BarIstasyon.WebAPI/Controllers/FooterAddressesController.cs" Line="16" Column="6" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/FooterAddressHandlers/GetAllFooterAddressQueryHandler.cs" Line="20" Column="74" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/FooterAddressHandlers/GetFooterAddressByIdQueryHandler.cs" Line="17" Column="65" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Commands/FooterAddressCommands/RemoveFooterAddressCommand.cs" Line="4" Column="68" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/BaseHandlers/GetAllBaseQueryHandler.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.WebAPI/Program.cs" Line="158" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,21 +23,33 @@
             <Node name="BarIstasyon.Business" expanded="True">
               <Node name="Features" expanded="True">
                 <Node name="CQRS" expanded="True">
-                  <Node name="Commands" expanded="True" />
+                  <Node name="Commands" expanded="True">
+                    <Node name="BaseCommands" expanded="True" />
+                    <Node name="FooterAddressCommands" expanded="True" />
+                  </Node>
                   <Node name="Handlers" expanded="True">
-                    <Node name="AboutHandlers" expanded="True" />
-                    <Node name="BannerHandlers" expanded="True" />
                     <Node name="BaseHandlers" expanded="True" />
+                    <Node name="FooterAddressHandlers" expanded="True" />
                   </Node>
                   <Node name="Queries" expanded="True">
                     <Node name="AboutQueries" expanded="True" />
                     <Node name="BannerQueries" expanded="True" />
                     <Node name="BaseQueries" expanded="True" />
+                    <Node name="CategoryQueries" expanded="True" />
+                    <Node name="CoffeeDescriptionQueries" expanded="True" />
+                    <Node name="CoffeeFeaturesQueries" expanded="True" />
+                    <Node name="CoffeePricingQueries" expanded="True" />
+                    <Node name="ContactQueries" expanded="True" />
+                    <Node name="FeatureQueries" expanded="True" />
+                    <Node name="FooterAddressQueries" expanded="True" />
                   </Node>
                   <Node name="Results" expanded="True">
                     <Node name="AboutResults" expanded="True" />
                     <Node name="BannerResults" expanded="True" />
                     <Node name="BaseResults" expanded="True" />
+                    <Node name="CategoryResults" expanded="True" />
+                    <Node name="CoffeeFeatureResults" expanded="True" />
+                    <Node name="CoffeeResults" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -49,23 +63,14 @@
               <Node name="Entities" expanded="True" />
             </Node>
             <Node name="BarIstasyon.WebAPI" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="BannersController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <DisabledProjects>
-    <String>BarIstasyon.WebUI/BarIstasyon.WebAPI.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
 </Properties>
