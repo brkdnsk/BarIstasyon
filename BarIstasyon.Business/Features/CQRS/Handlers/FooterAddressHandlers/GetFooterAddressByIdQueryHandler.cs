@@ -5,16 +5,16 @@ using BarIstasyon.Business.Features.CQRS.Queries;
 
 namespace BarIstasyon.Business.Features.CQRS.Handlers.FooterAddressHandlers
 {
-    public class GetcFooterAddressByIdQueryHandler
+    public class GetFooterAddressByIdQueryHandler
     {
         private readonly IMongoCollection<FooterAddress> _footerAddressCollection;
 
-        public GetcFooterAddressByIdQueryHandler(IMongoDatabase database)
+        public GetFooterAddressByIdQueryHandler(IMongoDatabase database)
         {
             _footerAddressCollection = database.GetCollection<FooterAddress>("Footer Addresses");
         }
 
-        public async Task<FooterAddress> Handle(GetContactByIdQuery query)
+        public async Task<FooterAddress> Handle(GetFooterAddressByIdQuery query)
         {
             // Burada query.Id artık ObjectId türünde
             var filter = Builders<FooterAddress>.Filter.Eq(a => a.FooterAddressId, query.Id);  // ObjectId ile filtreleme
