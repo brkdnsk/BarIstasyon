@@ -7,7 +7,7 @@ namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeeFeatureCommands
 	{
        
 
-        public bool Avaliable { get; set; }
+        public string Avaliable { get; set; }
     }
 }
 

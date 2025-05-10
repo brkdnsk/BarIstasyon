@@ -1,14 +1,20 @@
 ﻿using System;
-using BarIstasyon.Entity.Entities;
-namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeeFeatureCommands
+using MongoDB.Bson;
+
+namespace BarIstasyon.Business.Features.CQRS.Commands.BaseCommands
 {
-	public class RemoveCoffeeFeatureCommand
-	{
-        public object CoffeeFeatureId { get; set; }
-        public RemoveCoffeeFeatureCommand(int id)
+    public class RemoveCoffeeFeatureCommand
+    {
+        public ObjectId id { get; set; }
+
+        public RemoveCoffeeFeatureCommand(ObjectId id)
         {
-            CoffeeFeatureId = id;
+            this.id = id;
         }
+
+        // Parametresiz constructor da ekleyin, model binding için gerekli olabilir
+        public RemoveCoffeeFeatureCommand() { }
     }
 }
+
 

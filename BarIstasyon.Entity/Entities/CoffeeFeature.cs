@@ -16,7 +16,7 @@ namespace BarIstasyon.Entity.Entities
 
        
 
-        public bool Avaliable { get; set; }
+        public string Avaliable { get; set; }
     }
 }
 
