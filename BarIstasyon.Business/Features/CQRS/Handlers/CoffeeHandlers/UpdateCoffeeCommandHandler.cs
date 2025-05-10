@@ -19,25 +19,33 @@ public class UpdateCoffeeCommandHandler
 
     public async Task Handle(UpdateCoffeeCommand command)
     {
-        var coffee = await _coffeeRepository.GetByIdAsync(command.CoffeeId);
-        if (coffee == null)
+        try
         {
-            throw new Exception("Coffee entity bulunamadı.");
+            var coffee = await _coffeeRepository.GetByIdAsync(command.CoffeeId);
+            if (coffee == null)
+            {
+                throw new Exception("Coffee entity bulunamadı.");
+            }
+
+            coffee.CoverImageURL = command.CoverImageURL;
+            coffee.WaterML = command.WaterML;
+            coffee.CoffeeML = command.CoffeeML;
+            coffee.MilkML = command.MilkML;
+            coffee.FoamML = command.FoamML;
+            coffee.SugarOrSweetener = command.SugarOrSweetener;
+            coffee.ExtraIngredients = command.ExtraIngredients;
+            coffee.BrewingTime = command.BrewingTime;
+            coffee.BrewingType = command.BrewingType;
+            coffee.BigImageURL = command.BigImageURL;
+
+            await _coffeeRepository.UpdateAsync(command.CoffeeId, coffee);
         }
-
-        coffee.CoverImageURL = command.CoverImageURL;
-        coffee.WaterML = command.WaterML;
-        coffee.CoffeeML = command.CoffeeML;
-        coffee.MilkML = command.MilkML;
-        coffee.FoamML = command.FoamML;
-        coffee.SugarOrSweetener = command.SugarOrSweetener;
-        coffee.ExtraIngredients = command.ExtraIngredients;
-        coffee.BrewingTime = command.BrewingTime;
-        coffee.BrewingType = command.BrewingType;
-        coffee.BigImageURL = command.BigImageURL;
-        
-
-
-        await _coffeeRepository.UpdateAsync(command.CoffeeId, coffee);  // Güncellenmiş about nesnesini repository'de güncelliyoruz
+        catch (Exception ex)
+        {
+            // Log hatayı
+            Console.WriteLine($"Update error: {ex.Message}");
+            throw;
+        }
     }
+
 }

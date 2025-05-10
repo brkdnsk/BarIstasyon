@@ -20,9 +20,9 @@ namespace BarIstasyon.Entity.Entities
 
         public int FoamML { get; set; }
 
-        public bool SugarOrSweetener { get; set; }
+        public string SugarOrSweetener { get; set; }
 
-        public bool ExtraIngredients { get; set; }
+        public string ExtraIngredients { get; set; }
 
         public int BrewingTime { get; set; }
 
