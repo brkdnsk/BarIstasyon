@@ -1,5 +1,6 @@
 using BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers;
 using BarIstasyon.Business.Features.CQRS.Handlers.BannerHandlers;
+using BarIstasyon.Business.Features.CQRS.Handlers.BaseHandlers;
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Driver;
@@ -33,6 +34,11 @@ builder.Services.AddScoped<IRepository<Banner>>(sp =>
     var db = sp.GetRequiredService<IMongoDatabase>();
     return new Repository<Banner>(db, "Banners");
 });
+builder.Services.AddScoped<IRepository<Base>>(sp =>
+{
+    var db = sp.GetRequiredService<IMongoDatabase>();
+    return new Repository<Base>(db, "Bases");
+});
 // Handler servisleri
 builder.Services.AddScoped<CreateAboutCommandHandler>();
 builder.Services.AddScoped<UpdateAboutCommandHandler>();
@@ -49,6 +55,13 @@ builder.Services.AddScoped<UpdateBannerCommandHandler>();
 builder.Services.AddScoped<GetAllBannerQueryHandler>();
 builder.Services.AddScoped<RemoveBannerCommandHandler>();
 builder.Services.AddScoped<GetBannerByIdQueryHandler>();
+
+
+builder.Services.AddScoped<CreateBaseCommandHandler>();
+builder.Services.AddScoped<UpdateBaseCommandHandler>();
+builder.Services.AddScoped<GetAllBaseQueryHandler>();
+builder.Services.AddScoped<RemoveBaseCommandHandler>();
+builder.Services.AddScoped<GetBaseByIdQueryHandler>();
 
 
 // Controller servisleri
