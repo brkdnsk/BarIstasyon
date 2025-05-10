@@ -1,7 +1,7 @@
 ﻿using System;
 using MongoDB.Bson;
 
-namespace BarIstasyon.Business.Features.CQRS.Commands.BaseCommands
+namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeeFeatureCommands
 {
     public class RemoveCoffeeFeatureCommand
     {
