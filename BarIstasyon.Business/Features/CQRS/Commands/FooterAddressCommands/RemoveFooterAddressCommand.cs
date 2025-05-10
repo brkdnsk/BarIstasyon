@@ -1,13 +1,19 @@
 ﻿using System;
-namespace BarIstasyon.Business.Features.CQRS.Commands.FooterAddressCommands
+using MongoDB.Bson;
+
+namespace BarIstasyon.Business.Features.CQRS.Commands.BaseCommands
 {
-	public class RemoveFooterAddressCommand
-	{
-        public object FooterAddressId { get; set; }
-        public RemoveFooterAddressCommand(int id)
+    public class RemoveFooterAddressCommand
+    {
+        public ObjectId id { get; set; }
+
+        public RemoveFooterAddressCommand(ObjectId id)
         {
-            FooterAddressId = id;
+            this.id = id;
         }
+
+        // Parametresiz constructor da ekleyin, model binding için gerekli olabilir
+        public RemoveFooterAddressCommand() { }
     }
 }
 
