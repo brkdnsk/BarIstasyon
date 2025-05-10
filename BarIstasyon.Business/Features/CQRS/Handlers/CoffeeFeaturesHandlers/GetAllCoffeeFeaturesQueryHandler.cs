@@ -8,11 +8,11 @@ using BarIstasyon.Business.Features.CQRS.Queries.CoffeeFeaturesQueries;
 
 namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeaturesHandlers
 {
-    public class GetAllCoffeeFeaturesByIdQueryHandler
+    public class GetAllCoffeeFeaturesQueryHandler
     {
         private readonly IMongoCollection<CoffeeFeature> _coffeeFeatureCollection;
 
-        public GetAllCoffeeFeaturesByIdQueryHandler(IMongoDatabase database)
+        public GetAllCoffeeFeaturesQueryHandler(IMongoDatabase database)
         {
             _coffeeFeatureCollection = database.GetCollection<CoffeeFeature>("Coffee Features");
         }

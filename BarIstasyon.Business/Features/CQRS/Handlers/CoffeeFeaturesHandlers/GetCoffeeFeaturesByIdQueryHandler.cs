@@ -6,11 +6,11 @@ using MongoDB.Driver;
 
 namespace BarIstasyon.Business.Features.CQRS.Handlers.CoffeeFeatureHandlers
 {
-	public class GetCoffeeFeaturesQueryHandler
+	public class GetCoffeeFeaturesByIdQueryHandler
 	{
         private readonly IMongoCollection<CoffeeFeature> _coffeeFeatureCollection;
 
-        public GetCoffeeFeaturesQueryHandler(IMongoDatabase database)
+        public GetCoffeeFeaturesByIdQueryHandler(IMongoDatabase database)
         {
             _coffeeFeatureCollection = database.GetCollection<CoffeeFeature>("Coffee Features");
         }
