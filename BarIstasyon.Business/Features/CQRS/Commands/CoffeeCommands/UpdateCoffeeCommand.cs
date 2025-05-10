@@ -1,11 +1,16 @@
 ﻿using System;
 using BarIstasyon.Entity.Entities;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace BarIstasyon.Business.Features.CQRS.Commands.CoffeeCommands
 {
 	public class UpdateCoffeeCommand
 	{
-        
+
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId CoffeeId { get; set; }
 
         public string CoverImageURL { get; set; }
 
