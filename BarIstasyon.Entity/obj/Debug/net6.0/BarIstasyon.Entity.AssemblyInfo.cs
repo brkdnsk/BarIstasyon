@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarIstasyon.Entity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87d4b7398d3e0401e51d697d3a6f5651ed186c9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35ec0436a858d98a99ae4166cb570e824dba3b68")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarIstasyon.Entity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarIstasyon.Entity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
