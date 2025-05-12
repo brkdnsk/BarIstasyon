@@ -13,6 +13,7 @@
     <None Remove="ViewComponents\UILayoutViewComponents\" />
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\_HeadUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\About\" />
@@ -21,5 +22,6 @@
     <Folder Include="ViewComponents\UILayoutViewComponents\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\_HeadUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
   </ItemGroup>
 </Project>
