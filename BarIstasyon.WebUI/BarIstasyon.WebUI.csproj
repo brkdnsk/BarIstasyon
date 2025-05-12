@@ -17,6 +17,8 @@
     <None Remove="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
     <None Remove="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
     <None Remove="Views\Shared\Components\_ScriptUILayoutComponentPartial\" />
+    <None Remove="ViewComponents\AboutViewComponents\" />
+    <None Remove="Views\Shared\Components\_AboutUsComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\About\" />
@@ -29,5 +31,7 @@
     <Folder Include="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
     <Folder Include="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
     <Folder Include="Views\Shared\Components\_ScriptUILayoutComponentPartial\" />
+    <Folder Include="ViewComponents\AboutViewComponents\" />
+    <Folder Include="Views\Shared\Components\_AboutUsComponentPartial\" />
   </ItemGroup>
 </Project>
