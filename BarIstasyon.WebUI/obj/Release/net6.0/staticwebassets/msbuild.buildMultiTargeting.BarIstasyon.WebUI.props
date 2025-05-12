@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/BarIstasyon.WebUI.props" />
+</Project>

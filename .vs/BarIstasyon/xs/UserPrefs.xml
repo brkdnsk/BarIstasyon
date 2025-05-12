@@ -1,42 +1,45 @@
-﻿<Properties StartupConfiguration="{2C214622-E123-4FC2-88B1-58688A7BD5C4}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+﻿<Properties StartupConfiguration="{BB2EF90B-31FE-409E-8523-9CB2D8A4B75A}|BarIstasyon.API">
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebUI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebUI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <DisabledProjects>
-    <String>BarIstasyon.WebUI/BarIstasyon.WebAPI.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebUI/Views/UILayout/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebUI/ViewComponents/AboutViewComponents/_AboutUsComponentPartial.cs">
     <Files>
-      <File FileName="BarIstasyon.WebUI/wwwroot/carbook-master/about.html" />
-      <File FileName="BarIstasyon.WebUI/wwwroot/carbook-master/services.html" />
-      <File FileName="BarIstasyon.WebUI/Views/Home/Index.cshtml" Line="9" Column="1" />
-      <File FileName="BarIstasyon.WebUI/Controllers/AboutController.cs" Line="14" Column="33" />
-      <File FileName="BarIstasyon.WebUI/Views/About/Index.cshtml" Line="6" Column="17" />
-      <File FileName="BarIstasyon.WebUI/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="BarIstasyon.WebUI/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="BarIstasyon.WebUI/Controllers/UILayoutController.cs" Line="11" Column="26" />
-      <File FileName="BarIstasyon.WebUI/Views/UILayout/Index.cshtml" Line="1" Column="1" />
-      <File FileName="BarIstasyon.WebUI/wwwroot/carbook-master/index.html" Line="1" Column="1" />
+      <File FileName="BarIstasyon.WebUI/ViewComponents/AboutViewComponents/_AboutUsComponentPartial.cs" Line="25" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BarIstasyon" expanded="True">
-            <Node name="BarIstasyon.WebUI">
+            <Node name="BarIstasyon.WebUI" selected="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Views">
-                <Node name="Home" selected="True" />
+              <Node name="ViewComponents">
+                <Node name="UILayoutViewComponents" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="About" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="_AboutUsComponentPartial" expanded="True" />
+                    <Node name="_FooterUILayoutComponentPartial" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="UILayout" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="carbook-master" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <DisabledProjects>
+    <String>BarIstasyon.WebUI/BarIstasyon.WebAPI.csproj</String>
+  </DisabledProjects>
 </Properties>
