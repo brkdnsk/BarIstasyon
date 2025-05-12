@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Views\About\" />
+    <None Remove="Views\UILayout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\UILayout\" />
+  </ItemGroup>
 </Project>
