@@ -1,36 +1,22 @@
 ﻿<Properties StartupConfiguration="{BB2EF90B-31FE-409E-8523-9CB2D8A4B75A}|BarIstasyon.API">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebUI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebUI/ViewComponents/AboutViewComponents/_AboutUsComponentPartial.cs">
     <Files>
-      <File FileName="BarIstasyon.WebUI/ViewComponents/AboutViewComponents/_AboutUsComponentPartial.cs" Line="25" Column="18" />
+      <File FileName="BarIstasyon.WebUI/ViewComponents/AboutViewComponents/_AboutUsComponentPartial.cs" Line="32" Column="1" />
+      <File FileName="BarIstasyon.Dto/AboutDtos/ResultAboutDto.cs" />
+      <File FileName="BarIstasyon.WebUI/Program.cs" Line="5" Column="34" />
+      <File FileName="BarIstasyon.WebUI/Views/Shared/Components/_AboutUsComponentPartial/Default.cshtml" Line="21" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BarIstasyon" expanded="True">
-            <Node name="BarIstasyon.WebUI" selected="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="ViewComponents">
-                <Node name="UILayoutViewComponents" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="About" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="_AboutUsComponentPartial" expanded="True" />
-                    <Node name="_FooterUILayoutComponentPartial" expanded="True" />
-                  </Node>
+            <Node name="BarIstasyon.WebUI">
+              <Node name="ViewComponents" expanded="True">
+                <Node name="AboutViewComponents" expanded="True">
+                  <Node name="_AboutUsComponentPartial.cs" selected="True" />
                 </Node>
-                <Node name="UILayout" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="carbook-master" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -38,8 +24,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>BarIstasyon.WebUI/BarIstasyon.WebAPI.csproj</String>
   </DisabledProjects>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebUI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
 </Properties>

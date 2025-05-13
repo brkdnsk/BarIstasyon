@@ -161,5 +161,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BarIstasyon.Entity\BarIstasyon.Entity.csproj" />
     <ProjectReference Include="..\BarIstasyon.DataAccess\BarIstasyon.DataAccess.csproj" />
+    <ProjectReference Include="..\BarIstasyon.Dto\BarIstasyon.Dto.csproj" />
   </ItemGroup>
 </Project>

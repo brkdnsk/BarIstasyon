@@ -22,6 +22,12 @@
   <ItemGroup>
     <ProjectReference Include="..\BarIstasyon.DataAccess\BarIstasyon.DataAccess.csproj" />
     <ProjectReference Include="..\BarIstasyon.Business\BarIstasyon.Business.csproj" />
+    <ProjectReference Include="..\BarIstasyon.Dto\BarIstasyon.Dto.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\BarIstasyon.WebUI\BarIstasyon.WebUI.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>

@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+
 using Microsoft.AspNetCore.Mvc;
+using BarIstasyon.Dto.AboutDtos;
 
 namespace BarIstasyon.WebUI.ViewComponents.AboutViewComponents
 {
-	public class _AboutUsComponentPartial : ViewComponent
+    public class _AboutUsComponentPartial : ViewComponent
 	{
 		private readonly IHttpClientFactory _httpClientFactory;
 
@@ -20,7 +22,8 @@ namespace BarIstasyon.WebUI.ViewComponents.AboutViewComponents
 			if (responseMessage.IsSuccessStatusCode)
 			{
 				var jsonData = await responseMessage.Content.ReadAsStringAsync();
-				var values = JsonCovert.DeserializeObject<List<>>(jsonData);
+				var values = JsonConvert.DeserializeObject<List<ResultAboutDto>>(jsonData);
+				return View(values);
 			}
 			return View();
 		}

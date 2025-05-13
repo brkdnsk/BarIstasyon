@@ -18,3 +18,5 @@
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/obj/Debug/net8.0/BarIstasyon.Business.pdb
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/obj/Debug/net8.0/BarIstasyon.Business.genruntimeconfig.cache
 /Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/obj/Debug/net8.0/ref/BarIstasyon.Business.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/bin/Debug/net8.0/BarIstasyon.Dto.dll
+/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/bin/Debug/net8.0/BarIstasyon.Dto.pdb

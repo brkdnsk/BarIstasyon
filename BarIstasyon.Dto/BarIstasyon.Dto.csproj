@@ -9,4 +9,10 @@
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="3.3.0" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="AboutDtos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AboutDtos\" />
+  </ItemGroup>
 </Project>

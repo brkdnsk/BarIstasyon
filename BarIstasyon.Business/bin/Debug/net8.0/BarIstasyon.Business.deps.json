@@ -9,6 +9,7 @@
       "BarIstasyon.Business/1.0.0": {
         "dependencies": {
           "BarIstasyon.DataAccess": "1.0.0",
+          "BarIstasyon.Dto": "1.0.0",
           "BarIstasyon.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.15",
@@ -631,6 +632,17 @@
           }
         }
       },
+      "BarIstasyon.Dto/1.0.0": {
+        "dependencies": {
+          "MongoDB.Driver": "3.3.0"
+        },
+        "runtime": {
+          "BarIstasyon.Dto.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "BarIstasyon.Entity/1.0.0": {
         "dependencies": {
           "MongoDB.Driver": "3.3.0"
@@ -1001,6 +1013,11 @@
       "hashPath": "zstdsharp.port.0.7.3.nupkg.sha512"
     },
     "BarIstasyon.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BarIstasyon.Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

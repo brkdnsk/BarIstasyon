@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hUSI791x1mQIqORkoYGRpZdC/i0MfMo3aDlPe7DoVgUioLhG5Vc9Fmvyi0QILErkmNlAmW3xwJ4lV6wKgkFftg==",
+  "dgSpecHash": "9ULg29q01qI=",
   "success": true,
   "projectFilePath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj",
   "expectedPackageFiles": [
@@ -18,8 +18,8 @@
     "/Users/burakdansik/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/zstdsharp.port/0.7.3/zstdsharp.port.0.7.3.nupkg.sha512",
-    "/Users/burakdansik/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/burakdansik/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512"
+    "/Users/burakdansik/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/burakdansik/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

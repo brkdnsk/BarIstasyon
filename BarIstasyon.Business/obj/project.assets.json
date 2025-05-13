@@ -1008,6 +1008,19 @@
           "bin/placeholder/BarIstasyon.DataAccess.dll": {}
         }
       },
+      "BarIstasyon.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MongoDB.Driver": "3.3.0"
+        },
+        "compile": {
+          "bin/placeholder/BarIstasyon.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BarIstasyon.Dto.dll": {}
+        }
+      },
       "BarIstasyon.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2646,6 +2659,11 @@
       "path": "../BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj",
       "msbuildProject": "../BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj"
     },
+    "BarIstasyon.Dto/1.0.0": {
+      "type": "project",
+      "path": "../BarIstasyon.Dto/BarIstasyon.Dto.csproj",
+      "msbuildProject": "../BarIstasyon.Dto/BarIstasyon.Dto.csproj"
+    },
     "BarIstasyon.Entity/1.0.0": {
       "type": "project",
       "path": "../BarIstasyon.Entity/BarIstasyon.Entity.csproj",
@@ -2655,6 +2673,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "BarIstasyon.DataAccess >= 1.0.0",
+      "BarIstasyon.Dto >= 1.0.0",
       "BarIstasyon.Entity >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.15",
@@ -2691,6 +2710,9 @@
           "projectReferences": {
             "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj": {
               "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.DataAccess/BarIstasyon.DataAccess.csproj"
+            },
+            "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/BarIstasyon.Dto.csproj": {
+              "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Dto/BarIstasyon.Dto.csproj"
             },
             "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj": {
               "projectPath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Entity/BarIstasyon.Entity.csproj"
