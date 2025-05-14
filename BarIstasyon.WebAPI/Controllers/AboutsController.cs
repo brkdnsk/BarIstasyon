@@ -5,6 +5,7 @@ using BarIstasyon.Business.Features.CQRS.Queries.AboutQueries;
 using BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
+using BarIstasyon.Entity.Entities;
 
 namespace BarIstasyon.WebApi.Controllers
 {
@@ -43,7 +44,7 @@ namespace BarIstasyon.WebApi.Controllers
                 if (!ObjectId.TryParse(id, out ObjectId objectId))
                     return BadRequest("Geçersiz ID formatı.");
 
-                command.id = objectId;
+                command.AboutID = id.ToString();
                 await _updateAboutCommandHandler.Handle(command);
 
                 return Ok("Hakkımda bilgisi başarıyla güncellendi.");

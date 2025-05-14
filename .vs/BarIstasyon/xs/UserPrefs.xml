@@ -1,26 +1,58 @@
 ﻿<Properties StartupConfiguration="{BB2EF90B-31FE-409E-8523-9CB2D8A4B75A}|BarIstasyon.API">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.WebUI/ViewComponents/AboutViewComponents/_AboutUsComponentPartial.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BarIstasyon.Business/Features/CQRS/Handlers/AboutHandlers/GetAllAboutQueryHandler.cs">
     <Files>
-      <File FileName="BarIstasyon.WebUI/ViewComponents/AboutViewComponents/_AboutUsComponentPartial.cs" Line="32" Column="1" />
-      <File FileName="BarIstasyon.Dto/AboutDtos/ResultAboutDto.cs" />
-      <File FileName="BarIstasyon.WebUI/Program.cs" Line="5" Column="34" />
-      <File FileName="BarIstasyon.WebUI/Views/Shared/Components/_AboutUsComponentPartial/Default.cshtml" Line="21" Column="2" />
+      <File FileName="BarIstasyon.Dto/AboutDtos/ResultAboutDto.cs" Line="25" Column="6" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Handlers/AboutHandlers/GetAllAboutQueryHandler.cs" Line="36" Column="44" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Results/AboutResults/GetAboutByIdQueryResult.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.Business/Features/CQRS/Results/AboutResults/GetAboutQueryResult.cs" Line="1" Column="1" />
+      <File FileName="BarIstasyon.WebAPI/Controllers/AboutsController.cs" Line="44" Column="67" />
+      <File FileName="BarIstasyon.Entity/Entities/About.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BarIstasyon" expanded="True">
-            <Node name="BarIstasyon.WebUI">
-              <Node name="ViewComponents" expanded="True">
-                <Node name="AboutViewComponents" expanded="True">
-                  <Node name="_AboutUsComponentPartial.cs" selected="True" />
+            <Node name="BarIstasyon.Business">
+              <Node name="Abstract" expanded="True" />
+              <Node name="Features" expanded="True">
+                <Node name="CQRS" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="AboutCommands" expanded="True" />
+                    <Node name="BannerCommands" expanded="True" />
+                  </Node>
+                  <Node name="Handlers">
+                    <Node name="AboutHandlers">
+                      <Node name="GetAllAboutQueryHandler.cs" selected="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Results" expanded="True">
+                    <Node name="AboutResults" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
+            <Node name="BarIstasyon.Dto">
+              <Node name="AboutDtos" expanded="True" />
+            </Node>
+            <Node name="BarIstasyon.Entity">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="BarIstasyon.WebAPI">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="BarIstasyon.WebUI">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -28,7 +60,9 @@
   <DisabledProjects>
     <String>BarIstasyon.WebUI/BarIstasyon.WebAPI.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebUI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.ItemProperties.BarIstasyon.WebAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
 </Properties>

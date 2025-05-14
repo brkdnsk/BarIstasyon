@@ -2,8 +2,6 @@
 using BarIstasyon.DataAccess.Repositories2;
 using BarIstasyon.Entity.Entities;
 using MongoDB.Bson;
-using System;
-using System.Threading.Tasks;
 
 public class UpdateAboutCommandHandler
 {
@@ -16,7 +14,13 @@ public class UpdateAboutCommandHandler
 
     public async Task Handle(UpdateAboutCommand command)
     {
-        var about = await _aboutRepository.GetByIdAsync(command.id);
+        // API'den gelen id'yi ObjectId'ye dönüştür
+        if (!ObjectId.TryParse(command.AboutID, out ObjectId objectId))
+        {
+            throw new Exception("Geçersiz id formatı.");
+        }
+
+        var about = await _aboutRepository.GetByIdAsync(objectId);  // ObjectId kullanarak veritabanında sorgulama yapıyoruz
         if (about == null)
         {
             throw new Exception("About entity bulunamadı.");
@@ -26,6 +30,6 @@ public class UpdateAboutCommandHandler
         about.Description = command.Description;
         about.ImageURL = command.ImageUrl;
 
-        await _aboutRepository.UpdateAsync(command.id, about);  // Güncellenmiş about nesnesini repository'de güncelliyoruz
+        await _aboutRepository.UpdateAsync(objectId, about);  // Güncellenmiş about nesnesini repository'de güncelliyoruz
     }
 }

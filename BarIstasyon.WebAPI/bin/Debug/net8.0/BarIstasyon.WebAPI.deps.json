@@ -747,7 +747,8 @@
       },
       "BarIstasyon.Dto/1.0.0": {
         "dependencies": {
-          "MongoDB.Driver": "3.3.0"
+          "MongoDB.Driver": "3.3.0",
+          "Newtonsoft.Json": "8.0.3"
         },
         "runtime": {
           "BarIstasyon.Dto.dll": {

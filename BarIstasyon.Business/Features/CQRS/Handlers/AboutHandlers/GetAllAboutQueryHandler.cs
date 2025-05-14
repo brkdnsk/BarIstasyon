@@ -30,7 +30,7 @@ namespace BarIstasyon.Business.Features.CQRS.Handlers.AboutHandlers
             {
                 result.Add(new ResultAboutDto
                 {
-                    aboutID = about.AboutID.ToString(),  // ObjectId'yi string'e dönüştür
+                    AboutID = about.AboutID.ToString(),  // ObjectId'yi string'e dönüştür
                     title = about.Title,
                     description=about.Description,
                     imageURL=about.ImageURL

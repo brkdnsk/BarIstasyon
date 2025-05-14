@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vcnHQnnmeMw=",
+  "dgSpecHash": "7RarOURDm2b6C560WqH/seRDbZh/YtlCwoVRxX3Y/oNdF6IteA5ucEi8X7rBZZb/LMRmZ01m26YZUrhtRMsG+A==",
   "success": true,
   "projectFilePath": "/Users/burakdansik/Desktop/BarIstasyon/BarIstasyon.Business/BarIstasyon.Business.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "/Users/burakdansik/.nuget/packages/mongodb.driver/3.3.0/mongodb.driver.3.3.0.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/mongodb.entityframeworkcore/8.3.0/mongodb.entityframeworkcore.8.3.0.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/burakdansik/.nuget/packages/newtonsoft.json/6.0.8/newtonsoft.json.6.0.8.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/snappier/1.0.0/snappier.1.0.0.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
@@ -55,5 +56,16 @@
     "/Users/burakdansik/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
     "/Users/burakdansik/.nuget/packages/zstdsharp.port/0.7.3/zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json 6.0.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
